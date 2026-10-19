@@ -1,0 +1,2063 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Portofolio Refleksi Semester II — Siti Wafiq Aliyatun N.R., S.Pd. | PPG Calon Guru PPKn 2026</title>
+  <meta name="description" content="E-Portofolio Interaktif Seminar PPG Calon Guru Gelombang 1 Tahun 2026 Program Studi PPKn Universitas Muhammadiyah Purwokerto atas nama Siti Wafiq Aliyatun Nurur Rohmana, S.Pd.">
+  <link rel="icon" type="image/png" href="images/logo-ppg.png">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              black: '#111827',
+              dark: '#1F2937',
+              gray: '#4B5563',
+              subtle: '#F8F9FA',
+              border: '#E5E7EB',
+              pink: '#F472B6',
+              pinkSoft: '#FCE7F3',
+              pinkDeep: '#BE185D',
+              lime: '#E2F952',
+              purple: '#A855F7',
+              purpleSoft: '#F3E8FF',
+              teal: '#38BDF8',
+              tealSoft: '#E0F2FE'
+            }
+          },
+          fontFamily: {
+            display: ['"Plus Jakarta Sans"', 'sans-serif'],
+            body: ['"Inter"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+            editorial: ['"Newsreader"', 'serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom Framer-Tech Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-[#FFFFFF] text-[#111827] antialiased selection:bg-pink-200 selection:text-pink-900">
+
+  <!-- Top Reading Progress Indicator -->
+  <div id="scroll-progress" class="scroll-progress-bar"></div>
+
+  <!-- STICKY NAVBAR -->
+  <header class="fixed top-0 left-0 right-0 z-50 glass-nav transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand & Badges -->
+      <a href="#hero" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-xl bg-gray-950 flex items-center justify-center text-white font-mono font-bold text-sm tracking-wider shadow-sm group-hover:scale-105 transition-transform">
+          SW
+        </div>
+        <div class="flex flex-col">
+          <div class="flex items-center gap-2">
+            <span class="font-display font-extrabold text-sm sm:text-base tracking-tight text-gray-900">PORTFOLIO</span>
+            <span class="text-[10px] font-mono px-2 py-0.5 rounded-full bg-pink-50 text-pink-600 border border-pink-200 font-semibold hidden sm:inline-block">PPG CALON GURU 2026</span>
+          </div>
+          <span class="text-xs text-gray-500 font-medium tracking-tight">Siti Wafiq Aliyatun N.R., S.Pd.</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="hidden md:flex items-center gap-1.5 lg:gap-2">
+        <a href="#profil" class="px-3.5 py-1.5 rounded-full text-xs lg:text-sm font-medium text-gray-600 hover:text-gray-950 hover:bg-gray-100 transition-all">Tentang</a>
+        <a href="#roadmap" class="px-3.5 py-1.5 rounded-full text-xs lg:text-sm font-medium text-gray-600 hover:text-gray-950 hover:bg-gray-100 transition-all">Roadmap</a>
+        
+        <!-- Dropdown Mata Kuliah -->
+        <div class="relative group">
+          <button class="px-3.5 py-1.5 rounded-full text-xs lg:text-sm font-medium text-gray-600 hover:text-gray-950 hover:bg-gray-100 transition-all inline-flex items-center gap-1">
+            <span>Mata Kuliah</span>
+            <svg class="w-3.5 h-3.5 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+          </button>
+          <div class="absolute top-full left-0 mt-1 w-64 bg-white rounded-2xl shadow-xl border border-gray-100 py-2 opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-200">
+            <a href="#mk-pse" class="flex items-center gap-2.5 px-4 py-2 text-xs font-medium text-gray-700 hover:bg-pink-50 hover:text-pink-700 transition-colors">
+              <span class="font-mono text-[10px] bg-pink-100 text-pink-700 px-1.5 py-0.5 rounded">01</span>
+              <span>Pembelajaran Sosial & Emosional</span>
+            </a>
+            <a href="#mk-pmal" class="flex items-center gap-2.5 px-4 py-2 text-xs font-medium text-gray-700 hover:bg-purple-50 hover:text-purple-700 transition-colors">
+              <span class="font-mono text-[10px] bg-purple-100 text-purple-700 px-1.5 py-0.5 rounded">02</span>
+              <span>Pembelajaran Mendalam (PMAL)</span>
+            </a>
+            <a href="#mk-ppl" class="flex items-center gap-2.5 px-4 py-2 text-xs font-medium text-gray-700 hover:bg-sky-50 hover:text-sky-700 transition-colors">
+              <span class="font-mono text-[10px] bg-sky-100 text-sky-700 px-1.5 py-0.5 rounded">03</span>
+              <span>PPL Mandiri (SMPN 8)</span>
+            </a>
+            <a href="#mk-projek" class="flex items-center gap-2.5 px-4 py-2 text-xs font-medium text-gray-700 hover:bg-amber-50 hover:text-amber-700 transition-colors">
+              <span class="font-mono text-[10px] bg-amber-100 text-amber-700 px-1.5 py-0.5 rounded">04</span>
+              <span>Projek Kepemimpinan</span>
+            </a>
+            <a href="#mk-islam" class="flex items-center gap-2.5 px-4 py-2 text-xs font-medium text-gray-700 hover:bg-emerald-50 hover:text-emerald-700 transition-colors">
+              <span class="font-mono text-[10px] bg-emerald-100 text-emerald-700 px-1.5 py-0.5 rounded">05</span>
+              <span>Islam & Ilmu Pengetahuan</span>
+            </a>
+          </div>
+        </div>
+
+        <a href="#sintesis" class="px-3.5 py-1.5 rounded-full text-xs lg:text-sm font-medium text-gray-600 hover:text-gray-950 hover:bg-gray-100 transition-all">Sintesis</a>
+        <a href="#galeri" class="px-3.5 py-1.5 rounded-full text-xs lg:text-sm font-medium text-gray-600 hover:text-gray-950 hover:bg-gray-100 transition-all">Aksi Nyata</a>
+        <a href="#kontak" class="px-3.5 py-1.5 rounded-full text-xs lg:text-sm font-medium text-gray-600 hover:text-gray-950 hover:bg-gray-100 transition-all">Kontak</a>
+      </nav>
+
+      <!-- Action Buttons & Quick Search -->
+      <div class="flex items-center gap-2.5">
+        <button data-open-palette class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-600 text-xs font-mono transition-colors" title="Pencarian Cepat">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+          <span class="hidden sm:inline">Cari Refleksi</span>
+          <kbd class="hidden sm:inline text-[10px] bg-white px-1.5 py-0.5 rounded border border-gray-200 text-gray-500">Ctrl+K</kbd>
+        </button>
+
+        <a href="#menu-navigasi" class="btn-capsule !py-2 !px-4 !text-xs hidden sm:inline-flex">
+          <span>Eksplorasi</span>
+          <span class="arrow-icon !w-4 !h-4">→</span>
+        </a>
+
+        <!-- Mobile Menu Toggle -->
+        <button id="mobile-nav-toggle" class="md:hidden p-2 rounded-xl text-gray-700 hover:bg-gray-100" aria-expanded="false" aria-label="Menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-gray-200 px-6 py-4 space-y-2">
+      <a href="#profil" class="block py-2 text-sm font-medium text-gray-700 hover:text-pink-600">Tentang & Filosofi</a>
+      <a href="#roadmap" class="block py-2 text-sm font-medium text-gray-700 hover:text-pink-600">Roadmap Pembelajaran</a>
+      <a href="#menu-navigasi" class="block py-2 text-sm font-medium text-gray-700 hover:text-pink-600">Daftar Mata Kuliah (01-05)</a>
+      <a href="#sintesis" class="block py-2 text-sm font-medium text-gray-700 hover:text-pink-600">Sintesis 5 Pilar</a>
+      <a href="#galeri" class="block py-2 text-sm font-medium text-gray-700 hover:text-pink-600">Galeri Aksi Nyata</a>
+      <a href="#kontak" class="block py-2 text-sm font-medium text-gray-700 hover:text-pink-600">Kontak & Jejaring</a>
+    </div>
+  </header>
+
+  <main class="pt-20">
+
+    <!-- ==========================================================================
+         SECTION 1: COVER / HERO DASHBOARD
+         ========================================================================== -->
+    <section id="hero" class="relative min-h-[92vh] flex items-center justify-center bg-dot-grid py-12 lg:py-20 overflow-hidden border-b border-gray-100">
+      
+      <!-- Subtle Ambient Glows -->
+      <div class="absolute -top-32 left-1/4 w-96 h-96 bg-pink-100/60 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute bottom-10 right-10 w-80 h-80 bg-purple-100/50 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
+        
+        <!-- Institutional Partnership Badges -->
+        <div class="flex flex-wrap items-center gap-3 sm:gap-4 mb-8">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white border border-gray-200/90 shadow-sm">
+            <img src="images/logo-ump.png" alt="Logo UMP" class="h-5 w-auto object-contain">
+            <span class="text-xs font-semibold text-gray-800">Universitas Muhammadiyah Purwokerto</span>
+          </div>
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white border border-gray-200/90 shadow-sm">
+            <img src="images/logo-ppg.png" alt="Logo PPG" class="h-5 w-auto object-contain">
+            <span class="text-xs font-semibold text-gray-800">PPG Calon Guru Gel. 1 2026</span>
+          </div>
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white border border-gray-200/90 shadow-sm">
+            <img src="images/logo-smpn8.png" alt="Logo SMPN 8 Purwokerto" class="h-5 w-auto object-contain">
+            <span class="text-xs font-semibold text-gray-800">Sekolah Mitra: SMPN 8 Purwokerto</span>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+          
+          <!-- Sisi Kiri: Headline & Narasi Profil -->
+          <div class="lg:col-span-7 space-y-6">
+            
+            <!-- Trust Badge Pill -->
+            <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-pink-50/90 border border-pink-200 text-pink-900 shadow-sm">
+              <span class="text-amber-500 font-bold tracking-widest text-xs">★★★★★</span>
+              <span class="text-xs font-semibold font-mono">SEMINAR PPG CALON GURU — PRODI PPKn</span>
+            </div>
+
+            <!-- Big Bold Editorial Headline -->
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-950 tracking-tight leading-[1.08]">
+              Siti Wafiq<br class="hidden sm:inline">
+              <span class="bg-gradient-to-r from-gray-950 via-gray-800 to-pink-600 bg-clip-text text-transparent">Aliyatun N.R.</span>, S.Pd.
+            </h1>
+
+            <!-- Subtext & Philosophical Statement -->
+            <p class="text-lg sm:text-xl text-gray-600 leading-relaxed font-normal max-w-2xl">
+              <span class="font-editorial italic text-gray-900 text-xl font-medium">“Mendidik dengan empati, memimpin dengan keteladanan,</span> dan mengintegrasikan nilai-nilai Pancasila dalam pembelajaran bermakna yang adaptif serta berpusat pada kodrat peserta didik.”
+            </p>
+
+            <!-- Metrics / Key Stats Strip -->
+            <div class="grid grid-cols-3 gap-4 pt-2 pb-2 max-w-lg border-y border-gray-100">
+              <div>
+                <span class="block text-2xl font-black font-display text-gray-950">5 MK</span>
+                <span class="text-xs text-gray-500 font-medium">Refleksi Kritis 4C</span>
+              </div>
+              <div>
+                <span class="block text-2xl font-black font-display text-gray-950">100%</span>
+                <span class="text-xs text-gray-500 font-medium">PPL Mandiri Teruji</span>
+              </div>
+              <div>
+                <span class="block text-2xl font-black font-display text-gray-950">BAGJA</span>
+                <span class="text-xs text-gray-500 font-medium">Inisiatif Kepemimpinan</span>
+              </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="flex flex-wrap items-center gap-4 pt-2">
+              <a href="#menu-navigasi" class="btn-capsule text-base">
+                <span>Mulai Eksplorasi</span>
+                <span class="arrow-icon">→</span>
+              </a>
+              <a href="#sintesis" class="btn-capsule-outline">
+                <svg class="w-4 h-4 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                <span>Sintesis 5 Pilar Guru</span>
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Sisi Kanan: Orbital Profile Radar -->
+          <div class="lg:col-span-5 flex justify-center items-center">
+            <div class="radar-stage">
+              
+              <!-- Concentric Orbital Rings -->
+              <div class="orbital-ring orbital-ring-1"></div>
+              <div class="orbital-ring orbital-ring-2"></div>
+              <div class="orbital-ring orbital-ring-3"></div>
+
+              <!-- Floating Role Pills around the radar -->
+              <div class="floating-pill floating-pill-pink pill-pos-top-left">
+                <span class="w-2 h-2 rounded-full bg-pink-500 animate-pulse"></span>
+                <span>Guru PPKn</span>
+              </div>
+
+              <div class="floating-pill floating-pill-lime pill-pos-top-right">
+                <span class="w-2 h-2 rounded-full bg-lime-600"></span>
+                <span>Sosial-Emosional</span>
+              </div>
+
+              <div class="floating-pill floating-pill-purple pill-pos-bottom-left">
+                <span class="w-2 h-2 rounded-full bg-purple-500"></span>
+                <span>Kepemimpinan</span>
+              </div>
+
+              <div class="floating-pill floating-pill-teal pill-pos-bottom-right">
+                <span class="w-2 h-2 rounded-full bg-sky-500"></span>
+                <span>Pendidik Reflektif</span>
+              </div>
+
+              <div class="floating-pill floating-pill-dark pill-pos-center-bottom">
+                <span class="text-pink-400 text-xs">✦</span>
+                <span>Change Maker</span>
+              </div>
+
+              <!-- Center Profile Image Circle -->
+              <div class="relative w-56 h-56 sm:w-64 sm:h-64 rounded-full overflow-hidden border-4 border-white shadow-2xl z-20 group">
+                <img 
+                  src="images/profil-siti-wafiq.png" 
+                  alt="Siti Wafiq Aliyatun Nurur Rohmana, S.Pd." 
+                  class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                >
+                <div class="absolute inset-0 bg-gradient-to-t from-gray-950/40 via-transparent to-transparent opacity-60"></div>
+                <div class="absolute bottom-3 inset-x-0 text-center">
+                  <span class="text-[11px] font-semibold text-white/95 px-2.5 py-0.5 rounded-full bg-gray-950/60 backdrop-blur-sm">Siti Wafiq, S.Pd.</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         SECTION 2: MENU UTAMA (DASHBOARD REFLEKSI)
+         ========================================================================== -->
+    <section id="menu-navigasi" class="py-16 bg-[#F8F9FA] border-b border-gray-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
+          <div>
+            <div class="inline-flex items-center gap-2 mb-2">
+              <span class="tag-pill tag-pill-dark">Dashboard</span>
+              <span class="text-xs font-mono text-gray-500 uppercase tracking-widest">Semester II</span>
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-950 tracking-tight">Navigasi Refleksi Pembelajaran</h2>
+            <p class="text-gray-600 mt-1 text-base">Akses terstruktur pada capaian dan artefak 5 mata kuliah semester II.</p>
+          </div>
+
+          <!-- Quick Anchor Pills -->
+          <div class="flex flex-wrap items-center gap-2 text-xs font-mono">
+            <a href="#profil" class="px-3 py-1.5 rounded-full bg-white border border-gray-200 text-gray-700 hover:border-gray-950 hover:bg-gray-950 hover:text-white transition-all shadow-sm">Tentang Saya</a>
+            <a href="#roadmap" class="px-3 py-1.5 rounded-full bg-white border border-gray-200 text-gray-700 hover:border-gray-950 hover:bg-gray-950 hover:text-white transition-all shadow-sm">Timeline Belajar</a>
+            <a href="#sintesis" class="px-3 py-1.5 rounded-full bg-white border border-gray-200 text-gray-700 hover:border-gray-950 hover:bg-gray-950 hover:text-white transition-all shadow-sm">Sintesis 5 Pilar</a>
+            <a href="#kontak" class="px-3 py-1.5 rounded-full bg-white border border-gray-200 text-gray-700 hover:border-gray-950 hover:bg-gray-950 hover:text-white transition-all shadow-sm">Hubungi</a>
+          </div>
+        </div>
+
+        <!-- 5 Mata Kuliah Modern Grid Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          <!-- Card 01: PSE -->
+          <a href="#mk-pse" class="framer-card p-6 flex flex-col justify-between group hover:border-pink-300">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="badge-num bg-pink-100 text-pink-700 font-mono">01</span>
+                <span class="tag-pill tag-pill-pink">CASEL 5 • STOP</span>
+              </div>
+              <h3 class="text-xl font-bold text-gray-950 group-hover:text-pink-600 transition-colors">
+                Pembelajaran Sosial dan Emosional
+              </h3>
+              <p class="text-sm text-gray-600 mt-2 line-clamp-3">
+                Membangun mindful teaching, stabilitas emosi peserta didik, dan integrasi 5 kompetensi sosial emosional pada pembelajaran PPKn.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-gray-100 flex items-center justify-between text-xs font-semibold text-gray-900 group-hover:text-pink-600">
+              <span>Buka Refleksi 4C & LK</span>
+              <span class="w-6 h-6 rounded-full bg-gray-100 group-hover:bg-pink-100 flex items-center justify-center transition-colors">→</span>
+            </div>
+          </a>
+
+          <!-- Card 02: PMAL -->
+          <a href="#mk-pmal" class="framer-card p-6 flex flex-col justify-between group hover:border-purple-300">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="badge-num bg-purple-100 text-purple-700 font-mono">02</span>
+                <span class="tag-pill bg-purple-50 text-purple-700 border border-purple-200">HOTS • Asesmen</span>
+              </div>
+              <h3 class="text-xl font-bold text-gray-950 group-hover:text-purple-600 transition-colors">
+                Pembelajaran Mendalam & Asesmen Lanjutan
+              </h3>
+              <p class="text-sm text-gray-600 mt-2 line-clamp-3">
+                Merancang asesmen presisi, diagnostik berkelanjutan, rubrik analitik, dan stimulasi pemikiran kritis berbasis studi kasus kontekstual.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-gray-100 flex items-center justify-between text-xs font-semibold text-gray-900 group-hover:text-purple-600">
+              <span>Buka Refleksi 4C & LK</span>
+              <span class="w-6 h-6 rounded-full bg-gray-100 group-hover:bg-purple-100 flex items-center justify-center transition-colors">→</span>
+            </div>
+          </a>
+
+          <!-- Card 03: PPL Mandiri -->
+          <a href="#mk-ppl" class="framer-card p-6 flex flex-col justify-between group hover:border-sky-300">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="badge-num bg-sky-100 text-sky-700 font-mono">03</span>
+                <span class="tag-pill bg-sky-50 text-sky-700 border border-sky-200">SMPN 8 Purwokerto</span>
+              </div>
+              <h3 class="text-xl font-bold text-gray-950 group-hover:text-sky-600 transition-colors">
+                PPL Mandiri (Praktik Lapangan Terpadu)
+              </h3>
+              <p class="text-sm text-gray-600 mt-2 line-clamp-3">
+                Kemandirian penuh dalam mengelola kelas nyata, diferensiasi kurikulum, Lesson Study, dan keteladanan moral langsung di sekolah mitra.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-gray-100 flex items-center justify-between text-xs font-semibold text-gray-900 group-hover:text-sky-600">
+              <span>Buka Refleksi 4C & LK</span>
+              <span class="w-6 h-6 rounded-full bg-gray-100 group-hover:bg-sky-100 flex items-center justify-center transition-colors">→</span>
+            </div>
+          </a>
+
+          <!-- Card 04: Projek Kepemimpinan -->
+          <a href="#mk-projek" class="framer-card p-6 flex flex-col justify-between group hover:border-amber-300">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="badge-num bg-amber-100 text-amber-700 font-mono">04</span>
+                <span class="tag-pill bg-amber-50 text-amber-700 border border-amber-200">Inkuiri BAGJA • ABCD</span>
+              </div>
+              <h3 class="text-xl font-bold text-gray-950 group-hover:text-amber-600 transition-colors">
+                Projek Kepemimpinan
+              </h3>
+              <p class="text-sm text-gray-600 mt-2 line-clamp-3">
+                Menjadi inisiator perubahan sosial melalui service learning, perencanaan berbasis aset komunitas, dan kolaborasi kepemimpinan pendidikan.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-gray-100 flex items-center justify-between text-xs font-semibold text-gray-900 group-hover:text-amber-600">
+              <span>Buka Refleksi 4C & LK</span>
+              <span class="w-6 h-6 rounded-full bg-gray-100 group-hover:bg-amber-100 flex items-center justify-center transition-colors">→</span>
+            </div>
+          </a>
+
+          <!-- Card 05: Islam dan IP -->
+          <a href="#mk-islam" class="framer-card p-6 flex flex-col justify-between group hover:border-emerald-300 md:col-span-2 lg:col-span-2">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="badge-num bg-emerald-100 text-emerald-700 font-mono">05</span>
+                <span class="tag-pill bg-emerald-50 text-emerald-700 border border-emerald-200">Integrasi Ilmu • Spiritual</span>
+              </div>
+              <h3 class="text-xl font-bold text-gray-950 group-hover:text-emerald-600 transition-colors">
+                Islam dan Ilmu Pengetahuan
+              </h3>
+              <p class="text-sm text-gray-600 mt-2">
+                Menyelaraskan fondasi tauhid dan akhlak murabbi dengan keilmuan kontemporer, menjadikan proses mendidik dan membela persatuan bangsa sebagai manifestasi ibadah luhur.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-gray-100 flex items-center justify-between text-xs font-semibold text-gray-900 group-hover:text-emerald-600">
+              <span>Buka Refleksi 4C & LK</span>
+              <span class="w-6 h-6 rounded-full bg-gray-100 group-hover:bg-emerald-100 flex items-center justify-center transition-colors">→</span>
+            </div>
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         SECTION 3: PROFIL & FILOSOFI CALON GURU
+         ========================================================================== -->
+    <section id="profil" class="py-20 bg-white border-b border-gray-100 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Header Tag -->
+        <div class="mb-4">
+          <span class="tag-pill tag-pill-pink">About Me & Philosophy</span>
+        </div>
+        
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-950 tracking-tight leading-tight max-w-4xl">
+          “Membangun Ekosistem Belajar yang Menguatkan Pikiran dan Jiwa Murid”
+        </h2>
+
+        <!-- Split Layout -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 mt-12 items-start">
+          
+          <!-- Kolom Kiri: Deskripsi Personal, Tilted Polaroid & Ki Hadjar Dewantara -->
+          <div class="lg:col-span-6 space-y-6">
+            
+            <div class="prose prose-gray text-base leading-relaxed text-gray-600">
+              <p>
+                Saya, <strong class="text-gray-950 font-semibold">Siti Wafiq Aliyatun Nurur Rohmana, S.Pd.</strong>, meyakini bahwa menjadi guru Pendidikan Pancasila dan Kewarganegaraan (PPKn) bukan sekadar mengajar regulasi tata negara atau menghafal butir konstitusi. Panggilan jiwa ini adalah amanah peradaban untuk mengasah nalar kritis, menumbuhkan integritas moral, serta memanusiakan setiap insan murid.
+              </p>
+            </div>
+
+            <!-- Blockquote Reflektif -->
+            <div class="p-6 rounded-2xl bg-pink-50/70 border-l-4 border-pink-500 relative">
+              <span class="text-3xl font-serif text-pink-300 absolute top-2 right-4">“</span>
+              <p class="font-editorial italic text-lg sm:text-xl text-gray-900 leading-snug">
+                “Pendidikan bukan hanya tentang mengisi nalar, melainkan menumbuhkan kesadaran diri, kepedulian sosial, dan karakter Pancasila yang kokoh.”
+              </p>
+              <div class="mt-3 flex items-center gap-3">
+                <div class="w-8 h-8 rounded-full overflow-hidden border border-pink-200">
+                  <img src="images/profil-siti-wafiq.png" alt="Siti Wafiq" class="w-full h-full object-cover">
+                </div>
+                <div>
+                  <span class="block text-xs font-bold text-gray-900">Siti Wafiq Aliyatun N.R., S.Pd.</span>
+                  <span class="text-[11px] text-gray-500">PPG Calon Guru PPKn 2026 — Universitas Muhammadiyah Purwokerto</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tilted Polaroid Stack: 3 Foto Aksi Nyata PPL -->
+            <div class="pt-4">
+              <div class="text-xs font-mono uppercase tracking-wider text-gray-400 mb-2">Dokumentasi Lapangan Terpilih (Arahkan Kursor / Sentuh):</div>
+              <div class="polaroid-stack">
+                
+                <!-- Polaroid 1: PPL Mengajar -->
+                <div class="polaroid-item polaroid-1" data-lightbox-src="images/ppl-mengajar.jpg" data-lightbox-caption="Praktik Mengajar Mandiri PPKn di Kelas SMPN 8 Purwokerto" data-lightbox-tag="PPL Mandiri">
+                  <img src="images/ppl-mengajar.jpg" alt="PPL Mengajar di Kelas">
+                  <div class="polaroid-caption">Praktik Kelas SMPN 8</div>
+                </div>
+
+                <!-- Polaroid 2: Interaksi & Diskusi Siswa -->
+                <div class="polaroid-item polaroid-2" data-lightbox-src="images/ppl-kelas.jpg" data-lightbox-caption="Interaksi Hangat dan Reflektif Bersama Peserta Didik SMPN 8 Purwokerto" data-lightbox-tag="Mindful Teaching">
+                  <img src="images/ppl-kelas.jpg" alt="Interaksi Siswa di Kelas">
+                  <div class="polaroid-caption">Kebersamaan Murid</div>
+                </div>
+
+                <!-- Polaroid 3: Wisuda & Komitmen Profesi -->
+                <div class="polaroid-item polaroid-3" data-lightbox-src="images/wisuda-keluarga.png" data-lightbox-caption="Momen Wisuda Cum Laude Bersama Keluarga Tercinta sebagai Doa Awal Pengabdian" data-lightbox-tag="Komitmen Guru">
+                  <img src="images/wisuda-keluarga.png" alt="Wisuda Cum Laude">
+                  <div class="polaroid-caption">Amanah & Restu</div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Kolom Kanan: Accordion Modern Bertingkat 1, 2, 3 -->
+          <div class="lg:col-span-6 space-y-4">
+            
+            <div class="accordion-group space-y-4">
+              
+              <!-- Accordion Item 1 -->
+              <div class="framer-card accordion-item open">
+                <button class="accordion-header" type="button">
+                  <div class="flex items-center gap-3">
+                    <span class="badge-num bg-gray-900 text-white font-mono">01</span>
+                    <div>
+                      <h4 class="font-bold text-gray-950 text-base sm:text-lg">Identitas & Nilai Diri Pendidik</h4>
+                      <p class="text-xs text-gray-500">Prinsip Tut Wuri Handayani & Integritas</p>
+                    </div>
+                  </div>
+                  <svg class="w-5 h-5 text-gray-500 accordion-icon flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <div class="accordion-body px-6 pb-6 text-sm text-gray-600 leading-relaxed border-t border-gray-100 pt-4">
+                  <div class="flex flex-col sm:flex-row gap-4 items-center mb-3">
+                    <img src="images/ki-hadjar-dewantara.png" alt="Ki Hadjar Dewantara" class="w-20 h-24 object-contain rounded-lg border border-gray-100 bg-gray-50 p-1">
+                    <p class="text-sm">
+                      Berpegang teguh pada warisan filosofis Ki Hadjar Dewantara: <em>Ing Ngarso Sung Tulodo, Ing Madyo Mangun Karso, Tut Wuri Handayani</em>. Guru PPKn berdiri sebagai teladan moral di depan, penggerak semangat di tengah, dan pendorong kemandirian peserta didik dari belakang dengan mengedepankan welas asih tanpa mengorbankan ketegasan prinsip.
+                    </p>
+                  </div>
+                  <div class="grid grid-cols-2 gap-2 text-xs font-mono mt-3">
+                    <div class="p-2 rounded bg-gray-50 border border-gray-100">✓ Berkarakter Welas Asih</div>
+                    <div class="p-2 rounded bg-gray-50 border border-gray-100">✓ Keteladanan Akhlak Mulia</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Accordion Item 2 -->
+              <div class="framer-card accordion-item">
+                <button class="accordion-header" type="button">
+                  <div class="flex items-center gap-3">
+                    <span class="badge-num bg-gray-900 text-white font-mono">02</span>
+                    <div>
+                      <h4 class="font-bold text-gray-950 text-base sm:text-lg">Fokus Pedagogik Kontemporer</h4>
+                      <p class="text-xs text-gray-500">Integrasi CASEL & Teaching at the Right Level (TaRL)</p>
+                    </div>
+                  </div>
+                  <svg class="w-5 h-5 text-gray-500 accordion-icon flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <div class="accordion-body px-6 pb-6 text-sm text-gray-600 leading-relaxed border-t border-gray-100 pt-4">
+                  <p>
+                    Mengombinasikan pembelajaran berdiferensiasi berbasis <strong>Teaching at the Right Level (TaRL)</strong> dengan 5 pilar <strong>Kompetensi Sosial Emosional (CASEL)</strong>. Setiap murid memiliki titik awal pemahaman dan beban psikologis yang berbeda; tugas pendidik adalah mengondisikan zona aman berpikir agar potensi nalar kritis kewarganegaraan dapat bertumbuh optimal.
+                  </p>
+                  <div class="mt-3 p-3 rounded-xl bg-pink-50 border border-pink-100 text-xs text-pink-900 font-medium">
+                    🎯 <strong>Strategi:</strong> Penerapan asesmen diagnostik non-kognitif di awal siklus, diikuti diferensiasi produk tugas dan scaffolding bertahap.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Accordion Item 3 -->
+              <div class="framer-card accordion-item">
+                <button class="accordion-header" type="button">
+                  <div class="flex items-center gap-3">
+                    <span class="badge-num bg-gray-900 text-white font-mono">03</span>
+                    <div>
+                      <h4 class="font-bold text-gray-950 text-base sm:text-lg">Visi Pengabdian Guru Profesional</h4>
+                      <p class="text-xs text-gray-500">Ruang Kelas Demokratis, Inklusif, dan Relevan</p>
+                    </div>
+                  </div>
+                  <svg class="w-5 h-5 text-gray-500 accordion-icon flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <div class="accordion-body px-6 pb-6 text-sm text-gray-600 leading-relaxed border-t border-gray-100 pt-4">
+                  <p>
+                    Menghadirkan ruang kelas PPKn yang demokratis, inklusif, dan berpijak pada realitas kontekstual masyarakat. Siswa dilatih berani menyuarakan pendapat, menghargai keberagaman suku dan agama, serta tanggap menyelesaikan permasalahan sosial di sekitarnya sebagai calon warga negara yang berdaya.
+                  </p>
+                  <div class="mt-3 flex items-center gap-2">
+                    <span class="px-2.5 py-1 rounded bg-gray-100 text-[11px] font-mono text-gray-700">Demokratis</span>
+                    <span class="px-2.5 py-1 rounded bg-gray-100 text-[11px] font-mono text-gray-700">Inklusif</span>
+                    <span class="px-2.5 py-1 rounded bg-gray-100 text-[11px] font-mono text-gray-700">Aksi Nyata Berdampak</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Mini Highlight Card: Sekolah Mitra -->
+            <div class="p-5 rounded-2xl bg-gray-50 border border-gray-200 flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <div class="w-12 h-12 rounded-xl bg-white border border-gray-200 flex items-center justify-center p-1.5 shadow-sm">
+                  <img src="images/logo-smpn8.png" alt="SMPN 8 Purwokerto" class="w-full h-full object-contain">
+                </div>
+                <div>
+                  <span class="block text-xs font-mono text-gray-500 uppercase">Laboratorium Pedagogik PPL</span>
+                  <span class="text-sm font-bold text-gray-900">SMP Negeri 8 Purwokerto</span>
+                </div>
+              </div>
+              <span class="text-xs font-mono px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-800 font-semibold">Aktif & Tervalidasi</span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         SECTION 4: PETA PERJALANAN SEMESTER II (ROADMAP)
+         ========================================================================== -->
+    <section id="roadmap" class="py-20 bg-dot-grid-dense bg-gray-50/70 border-b border-gray-200 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="tag-pill tag-pill-dark mb-3">Learning Journey Roadmap</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-950 tracking-tight">Peta Perjalanan Belajar Semester II</h2>
+          <p class="text-gray-600 mt-2 text-base">
+            Alur metamorfosis calon pendidik: dari kematangan regulasi emosional diri, penguasaan asesmen mendalam, kemandirian kelas, hingga kepemimpinan berdampak bagi peradaban.
+          </p>
+        </div>
+
+        <!-- Connected Timeline Vertical Stem -->
+        <div class="timeline-stem space-y-12 max-w-5xl mx-auto">
+          
+          <!-- Milestone 1: Kematangan Personal & Emosional -->
+          <div class="relative flex flex-col md:flex-row items-center gap-6 md:gap-12">
+            <div class="md:w-1/2 md:text-right order-2 md:order-1">
+              <div class="framer-card p-6 bg-white">
+                <span class="text-xs font-mono text-pink-600 font-bold uppercase tracking-wider">Fase 1 • Pondasi Mental</span>
+                <h3 class="text-xl font-bold text-gray-900 mt-1">Kematangan Personal & Emosional</h3>
+                <p class="text-sm text-gray-600 mt-2">
+                  Mempelajari regulasi emosi diri dan murid melalui Pembelajaran Sosial dan Emosional (PSE). Menguasai kesadaran diri (mindfulness) dan teknik STOP untuk menciptakan iklim belajar yang aman dan membahagiakan.
+                </p>
+                <div class="mt-4 flex flex-wrap gap-2 md:justify-end">
+                  <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-pink-50 text-pink-700 border border-pink-200">5 KSE CASEL</span>
+                  <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-gray-100 text-gray-700">Teknik STOP</span>
+                  <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-gray-100 text-gray-700">Well-Being</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-dot pulse-ring order-1 md:order-2 bg-pink-500 text-white border-pink-500">
+              01
+            </div>
+
+            <div class="md:w-1/2 order-3 hidden md:block">
+              <span class="text-xs font-mono text-gray-400">Tahap 01: Refleksi Ke Dalam (Intrapersonal)</span>
+            </div>
+          </div>
+
+          <!-- Milestone 2: Penguasaan Asesmen Presisi -->
+          <div class="relative flex flex-col md:flex-row items-center gap-6 md:gap-12">
+            <div class="md:w-1/2 md:text-right order-3 md:order-1 hidden md:block">
+              <span class="text-xs font-mono text-gray-400">Tahap 02: Ketepatan Konstruksi Penilaian</span>
+            </div>
+
+            <div class="timeline-dot order-1 md:order-2 bg-purple-600 text-white border-purple-600">
+              02
+            </div>
+
+            <div class="md:w-1/2 order-2 md:order-3">
+              <div class="framer-card p-6 bg-white">
+                <span class="text-xs font-mono text-purple-600 font-bold uppercase tracking-wider">Fase 2 • Ketajaman Pedagogik</span>
+                <h3 class="text-xl font-bold text-gray-900 mt-1">Penguasaan Asesmen Presisi (PMAL)</h3>
+                <p class="text-sm text-gray-600 mt-2">
+                  Merancang asesmen mendalam dan autentik. Menggeser fokus dari hafalan pasal kognitif rendah ke penalaran analitis Higher-Order Thinking Skills (HOTS) serta umpan balik deskriptif berkelanjutan.
+                </p>
+                <div class="mt-4 flex flex-wrap gap-2">
+                  <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-purple-50 text-purple-700 border border-purple-200">HOTS PPKn</span>
+                  <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-gray-100 text-gray-700">Rubrik Analitik</span>
+                  <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-gray-100 text-gray-700">Asesmen Otentik</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Milestone 3: Kemandirian Praktik Mengajar -->
+          <div class="relative flex flex-col md:flex-row items-center gap-6 md:gap-12">
+            <div class="md:w-1/2 md:text-right order-2 md:order-1">
+              <div class="framer-card p-6 bg-white">
+                <span class="text-xs font-mono text-sky-600 font-bold uppercase tracking-wider">Fase 3 • Uji Nyata Lapangan</span>
+                <h3 class="text-xl font-bold text-gray-900 mt-1">Kemandirian Praktik Mengajar (PPL Mandiri)</h3>
+                <p class="text-sm text-gray-600 mt-2">
+                  Mengampu ruang kelas secara mandiri di SMP Negeri 8 Purwokerto. Menghadapi keberagaman murid secara nyata, memodifikasi modul ajar secara dinamis, dan melakukan evaluasi Lesson Study harian.
+                </p>
+                <div class="mt-4 flex flex-wrap gap-2 md:justify-end">
+                  <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-sky-50 text-sky-700 border border-sky-200">SMPN 8 Purwokerto</span>
+                  <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-gray-100 text-gray-700">Lesson Study</span>
+                  <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-gray-100 text-gray-700">Otonomi Guru</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-dot order-1 md:order-2 bg-sky-600 text-white border-sky-600">
+              03
+            </div>
+
+            <div class="md:w-1/2 order-3 hidden md:block">
+              <span class="text-xs font-mono text-gray-400">Tahap 03: Integrasi Otonomi & Tanggung Jawab Nyata</span>
+            </div>
+          </div>
+
+          <!-- Milestone 4: Kolaborasi & Dampak Sosial -->
+          <div class="relative flex flex-col md:flex-row items-center gap-6 md:gap-12">
+            <div class="md:w-1/2 md:text-right order-3 md:order-1 hidden md:block">
+              <span class="text-xs font-mono text-gray-400">Tahap 04: Perluasan Dampak Komunitas (Service Learning)</span>
+            </div>
+
+            <div class="timeline-dot order-1 md:order-2 bg-amber-500 text-white border-amber-500">
+              04
+            </div>
+
+            <div class="md:w-1/2 order-2 md:order-3">
+              <div class="framer-card p-6 bg-white">
+                <span class="text-xs font-mono text-amber-600 font-bold uppercase tracking-wider">Fase 4 • Kepemimpinan Komunitas</span>
+                <h3 class="text-xl font-bold text-gray-900 mt-1">Kolaborasi & Dampak Sosial (Projek Kepemimpinan)</h3>
+                <p class="text-sm text-gray-600 mt-2">
+                  Memosisikan diri sebagai pemimpin perubahan (*change maker*). Menerapkan pendekatan Inkuiri Apresiatif BAGJA dan Asset-Based Community Development (ABCD) bersama tim dan mitra sekolah.
+                </p>
+                <div class="mt-4 flex flex-wrap gap-2">
+                  <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-amber-50 text-amber-700 border border-amber-200">BAGJA Inquiry</span>
+                  <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-gray-100 text-gray-700">ABCD Model</span>
+                  <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-gray-100 text-gray-700">Social Impact</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Milestone 5: Penguatan Nilai Spiritual & Integrasi Ilmu -->
+          <div class="relative flex flex-col md:flex-row items-center gap-6 md:gap-12">
+            <div class="md:w-1/2 md:text-right order-2 md:order-1">
+              <div class="framer-card p-6 bg-white">
+                <span class="text-xs font-mono text-emerald-600 font-bold uppercase tracking-wider">Fase 5 • Puncak Kesadaran Makna</span>
+                <h3 class="text-xl font-bold text-gray-900 mt-1">Penguatan Spiritual & Integrasi Ilmu</h3>
+                <p class="text-sm text-gray-600 mt-2">
+                  Menyelaraskan nilai-nilai profetik Islam dengan wawasan kebangsaan Pancasila dan sains kontemporer. Memaknai tugas keguruan sebagai ibadah pengabdian tanpa batas untuk kemajuan bangsa.
+                </p>
+                <div class="mt-4 flex flex-wrap gap-2 md:justify-end">
+                  <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-emerald-50 text-emerald-700 border border-emerald-200">Tauhid & Etika</span>
+                  <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-gray-100 text-gray-700">Murabbi</span>
+                  <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-gray-100 text-gray-700">Karakter Bangsa</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-dot order-1 md:order-2 bg-emerald-600 text-white border-emerald-600">
+              05
+            </div>
+
+            <div class="md:w-1/2 order-3 hidden md:block">
+              <span class="text-xs font-mono text-gray-400">Tahap 05: Harmoni Iman, Ilmu, dan Amal Kebangsaan</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         SECTION 5: MATA KULIAH 01 — PEMBELAJARAN SOSIAL DAN EMOSIONAL (PSE)
+         ========================================================================== -->
+    <section id="mk-pse" class="py-20 bg-white border-b border-gray-100" data-c4-section>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Header Section -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10 pb-6 border-b border-gray-100">
+          <div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="badge-num bg-pink-100 text-pink-700 font-mono">01</span>
+              <span class="tag-pill tag-pill-pink">Mata Kuliah 01</span>
+              <span class="tag-pill tag-pill-dark">Refleksi 4C Model</span>
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-950 tracking-tight">Pembelajaran Sosial dan Emosional (PSE)</h2>
+            <p class="text-gray-600 mt-1 text-base">Konsep Inti: Mindful Teaching, Well-being Murid, dan 5 Kompetensi Sosial Emosional (CASEL).</p>
+          </div>
+
+          <!-- Document Artifact Trigger Buttons -->
+          <div class="flex flex-wrap items-center gap-2.5">
+            <button data-open-artifact="pse" class="btn-capsule !bg-pink-600 hover:!bg-pink-700 !text-white text-sm shadow-pink-200">
+              <span>📄 Buka LK Lengkap PSE</span>
+              <span class="arrow-icon">→</span>
+            </button>
+            <a href="https://drive.google.com/file/d/12ETxlt5gn6fTQDsVW7gVD0xkbA1yUst4/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="btn-capsule-outline text-xs" title="Buka langsung di Google Drive">
+              <span>Drive ↗</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- 4C Model Interactive Tabs Switcher -->
+        <div class="flex items-center gap-2 mb-8 overflow-x-auto pb-2">
+          <button class="c4-tab-btn active" data-target-c="all">Semua Refleksi 4C</button>
+          <button class="c4-tab-btn" data-target-c="connection">1. Connection</button>
+          <button class="c4-tab-btn" data-target-c="challenge">2. Challenge</button>
+          <button class="c4-tab-btn" data-target-c="concept">3. Concept</button>
+          <button class="c4-tab-btn" data-target-c="change">4. Change</button>
+        </div>
+
+        <!-- 4C Grid Panels -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+          
+          <!-- Connection Panel -->
+          <div class="framer-card p-6 c4-content-panel border-l-4 border-l-pink-500" data-panel-c="connection">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-pink-500"></span>
+                <h4 class="font-bold text-gray-950 font-display text-lg">Connection (Keterkaitan)</h4>
+              </div>
+              <span class="text-xs font-mono text-gray-400 font-semibold">01 / 4C</span>
+            </div>
+            <p class="text-sm text-gray-700 leading-relaxed">
+              Menyadari bahwa keberhasilan akademik dan internalisasi nilai Pancasila pada murid berbanding lurus dengan stabilitas sosial dan emosional di ruang kelas PPKn. Materi tentang hak asasi, musyawarah, dan keadilan tidak dapat diserap secara mendalam jika siswa berada dalam kondisi cemas, tertekan, atau merasa dihakimi.
+            </p>
+            <div class="mt-4 p-3 rounded-xl bg-pink-50/70 border border-pink-100 text-xs text-pink-900">
+              💡 <strong>Insight Kunci:</strong> Sebelum menuntut keterlibatan kognitif, guru harus terlebih dahulu memastikan keamanan emosional (*emotional safety*) murid.
+            </div>
+          </div>
+
+          <!-- Challenge Panel -->
+          <div class="framer-card p-6 c4-content-panel border-l-4 border-l-amber-500" data-panel-c="challenge">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span>
+                <h4 class="font-bold text-gray-950 font-display text-lg">Challenge (Tantangan)</h4>
+              </div>
+              <span class="text-xs font-mono text-gray-400 font-semibold">02 / 4C</span>
+            </div>
+            <p class="text-sm text-gray-700 leading-relaxed">
+              Mengubah kebiasaan lama pembelajaran yang mulanya hanya berorientasi mengejar penuntasan kurikulum tekstual dan nilai angka, menjadi ruang aman yang melatih kesadaran diri (*mindfulness*). Tantangannya adalah keterbatasan waktu jam pelajaran PPKn serta resistensi siswa yang mulanya canggung saat diajak mengenali emosi diri.
+            </p>
+            <div class="mt-4 p-3 rounded-xl bg-amber-50/70 border border-amber-100 text-xs text-amber-900">
+              ⚡ <strong>Solusi Lapangan:</strong> Mengintegrasikan latihan mindful breathing singkat selama 3 menit tanpa memotong jam inti materi esensial.
+            </div>
+          </div>
+
+          <!-- Concept Panel -->
+          <div class="framer-card p-6 c4-content-panel border-l-4 border-l-sky-500" data-panel-c="concept">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-sky-500"></span>
+                <h4 class="font-bold text-gray-950 font-display text-lg">Concept (Konsep Kunci)</h4>
+              </div>
+              <span class="text-xs font-mono text-gray-400 font-semibold">03 / 4C</span>
+            </div>
+            <p class="text-sm text-gray-700 leading-relaxed">
+              Penguasaan 5 Kompetensi Sosial Emosional (CASEL): <em>Self-awareness</em> (kesadaran diri), <em>Self-management</em> (pengelolaan diri), <em>Social awareness</em> (kesadaran sosial), <em>Relationship skills</em> (keterampilan berelasi), dan <em>Responsible decision making</em> (pengambilan keputusan bertanggung jawab), ditunjang teknik relaksasi STOP.
+            </p>
+            <div class="mt-4 p-3 rounded-xl bg-sky-50/70 border border-sky-100 text-xs text-sky-900">
+              📚 <strong>Rujukan Teoretis:</strong> Kerangka CASEL Collaborative for Academic, Social, and Emotional Learning & Teori Well-Being Martin Seligman.
+            </div>
+          </div>
+
+          <!-- Change Panel -->
+          <div class="framer-card p-6 c4-content-panel border-l-4 border-l-emerald-500" data-panel-c="change">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+                <h4 class="font-bold text-gray-950 font-display text-lg">Change (Perubahan Praktik)</h4>
+              </div>
+              <span class="text-xs font-mono text-gray-400 font-semibold">04 / 4C</span>
+            </div>
+            <p class="text-sm text-gray-700 leading-relaxed">
+              Membiasakan check-in emosi harian (menggunakan roda emosi sederhana atau lembar refleksi ekspresi), memberikan ruang bercerita yang tidak menghakimi, serta menutup pembelajaran dengan apresiasi relasional antarmurid dalam setiap dinamika kerja kelompok PPKn.
+            </p>
+            <div class="mt-4 p-3 rounded-xl bg-emerald-50/70 border border-emerald-100 text-xs text-emerald-900">
+              🌱 <strong>Hasil Riil di Kelas:</strong> Murid lebih terbuka, konflik antar-kelompok menurun drastis, dan partisipasi diskusi musyawarah meningkat 40%.
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Interactive STOP Technique Simulator Card -->
+        <div id="stop-simulator" class="framer-card p-6 sm:p-8 bg-gray-50/80 border border-gray-200">
+          <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 mb-6">
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="tag-pill tag-pill-pink">Interactive Micro-Widget</span>
+                <span class="text-xs font-mono text-gray-500 font-semibold">Simulasi Ritual Pembelajaran</span>
+              </div>
+              <h4 class="text-xl font-bold text-gray-950 mt-1">Penerapan Praktik Teknik STOP di Ruang Kelas</h4>
+            </div>
+            <div class="text-xs font-mono text-gray-500">Klik huruf S - T - O - P di bawah ini:</div>
+          </div>
+
+          <div class="grid grid-cols-4 gap-3 sm:gap-4 mb-6">
+            <button id="stop-step-s" class="p-3 sm:p-4 rounded-xl text-center border transition-all bg-gray-900 text-white border-gray-900 shadow-md">
+              <span class="block text-2xl sm:text-3xl font-black font-mono">S</span>
+              <span class="text-[11px] sm:text-xs font-semibold">Stop</span>
+            </button>
+            <button id="stop-step-t" class="p-3 sm:p-4 rounded-xl text-center border transition-all bg-gray-100 text-gray-700 border-gray-200 hover:bg-gray-200">
+              <span class="block text-2xl sm:text-3xl font-black font-mono">T</span>
+              <span class="text-[11px] sm:text-xs font-semibold">Take a Breath</span>
+            </button>
+            <button id="stop-step-o" class="p-3 sm:p-4 rounded-xl text-center border transition-all bg-gray-100 text-gray-700 border-gray-200 hover:bg-gray-200">
+              <span class="block text-2xl sm:text-3xl font-black font-mono">O</span>
+              <span class="text-[11px] sm:text-xs font-semibold">Observe</span>
+            </button>
+            <button id="stop-step-p" class="p-3 sm:p-4 rounded-xl text-center border transition-all bg-gray-100 text-gray-700 border-gray-200 hover:bg-gray-200">
+              <span class="block text-2xl sm:text-3xl font-black font-mono">P</span>
+              <span class="text-[11px] sm:text-xs font-semibold">Proceed</span>
+            </button>
+          </div>
+
+          <!-- Dynamic Display Box -->
+          <div class="p-5 rounded-xl bg-white border border-gray-200 shadow-sm">
+            <div class="flex items-center gap-2 mb-2">
+              <span class="w-2 h-2 rounded-full bg-pink-500"></span>
+              <h5 id="stop-display-title" class="font-bold text-gray-900 text-base">Stop (Berhenti Sejenak)</h5>
+            </div>
+            <p id="stop-display-desc" class="text-sm text-gray-600 mb-2">
+              Hentikan sejenak semua aktivitas fisik, ketegangan nalar, dan beban kognitif di awal kelas PPKn.
+            </p>
+            <div class="text-xs text-pink-700 font-mono bg-pink-50/80 p-2.5 rounded-lg border border-pink-100">
+              <span class="font-bold">Panduan Guru di Kelas:</span> <span id="stop-display-guide">Pendidik mengajak siswa meletakkan pena, bersandar santai di kursi, dan merilekskan bahu.</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         SECTION 6: MATA KULIAH 02 — PEMBELAJARAN MENDALAM & ASESMEN LANJUTAN (PMAL)
+         ========================================================================== -->
+    <section id="mk-pmal" class="py-20 bg-gray-50/60 border-b border-gray-200" data-c4-section>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Header Section -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10 pb-6 border-b border-gray-200">
+          <div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="badge-num bg-purple-100 text-purple-700 font-mono">02</span>
+              <span class="tag-pill bg-purple-50 text-purple-700 border border-purple-200">Mata Kuliah 02</span>
+              <span class="tag-pill tag-pill-dark">Refleksi 4C Model</span>
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-950 tracking-tight">Pembelajaran Mendalam dan Asesmen Lanjutan (PMAL)</h2>
+            <p class="text-gray-600 mt-1 text-base">Konsep Inti: Higher-Order Thinking Skills (HOTS), Autentik, Konstruktif, Umpan Balik Berkelanjutan.</p>
+          </div>
+
+          <!-- Document Artifact Trigger Buttons -->
+          <div class="flex flex-wrap items-center gap-2.5">
+            <button data-open-artifact="pmal" class="btn-capsule !bg-purple-700 hover:!bg-purple-800 !text-white text-sm shadow-purple-200">
+              <span>📄 Buka LK Lengkap PMAL</span>
+              <span class="arrow-icon">→</span>
+            </button>
+            <a href="https://drive.google.com/file/d/17l92VXoDAfs4ZrsM7gkzTQ60Hi5L55aI/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="btn-capsule-outline text-xs" title="Buka langsung di Google Drive">
+              <span>Drive ↗</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- 4C Model Tabs Switcher -->
+        <div class="flex items-center gap-2 mb-8 overflow-x-auto pb-2">
+          <button class="c4-tab-btn active" data-target-c="all">Semua Refleksi 4C</button>
+          <button class="c4-tab-btn" data-target-c="connection">1. Connection</button>
+          <button class="c4-tab-btn" data-target-c="challenge">2. Challenge</button>
+          <button class="c4-tab-btn" data-target-c="concept">3. Concept</button>
+          <button class="c4-tab-btn" data-target-c="change">4. Change</button>
+        </div>
+
+        <!-- 4C Grid Panels -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+          
+          <!-- Connection Panel -->
+          <div class="framer-card p-6 c4-content-panel border-l-4 border-l-purple-600" data-panel-c="connection">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-purple-600"></span>
+                <h4 class="font-bold text-gray-950 font-display text-lg">Connection (Keterkaitan)</h4>
+              </div>
+              <span class="text-xs font-mono text-gray-400 font-semibold">01 / 4C</span>
+            </div>
+            <p class="text-sm text-gray-700 leading-relaxed">
+              Menghubungkan urgensi asesmen diagnostik dan formatif untuk memetakan capaian pemahaman nilai-nilai kewarganegaraan secara mendalam. Asesmen bukan alat penghakim akhir, melainkan kompas belajar (*assessment for & as learning*) yang memandu arah diferensiasi kelas.
+            </p>
+            <div class="mt-4 p-3 rounded-xl bg-purple-50/70 border border-purple-100 text-xs text-purple-900">
+              💡 <strong>Insight Kunci:</strong> Pengukuran kompetensi PPKn harus memotret kepekaan nurani dan daya nalar kritis, bukan sekadar kecepatan menghafal teks pasal perundang-undangan.
+            </div>
+          </div>
+
+          <!-- Challenge Panel -->
+          <div class="framer-card p-6 c4-content-panel border-l-4 border-l-amber-500" data-panel-c="challenge">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span>
+                <h4 class="font-bold text-gray-950 font-display text-lg">Challenge (Tantangan)</h4>
+              </div>
+              <span class="text-xs font-mono text-gray-400 font-semibold">02 / 4C</span>
+            </div>
+            <p class="text-sm text-gray-700 leading-relaxed">
+              Merancang instrumen penilaian autentik yang tidak hanya menguji hafalan teks hukum, melainkan kemampuan analisis kasus kontekstual. Tantangannya adalah merumuskan rubrik penilaian kinerja (*performance rubric*) yang objektif, adil, dan tidak ambigu bagi siswa jenjang SMP.
+            </p>
+            <div class="mt-4 p-3 rounded-xl bg-amber-50/70 border border-amber-100 text-xs text-amber-900">
+              ⚡ <strong>Solusi Lapangan:</strong> Menggunakan skenario dilema moral lokal di Banyumas (seperti pelestarian tradisi vs modernisasi) sebagai stimulus asesmen analitis.
+            </div>
+          </div>
+
+          <!-- Concept Panel -->
+          <div class="framer-card p-6 c4-content-panel border-l-4 border-l-sky-500" data-panel-c="concept">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-sky-500"></span>
+                <h4 class="font-bold text-gray-950 font-display text-lg">Concept (Konsep Kunci)</h4>
+              </div>
+              <span class="text-xs font-mono text-gray-400 font-semibold">03 / 4C</span>
+            </div>
+            <p class="text-sm text-gray-700 leading-relaxed">
+              Penyusunan rubrik analitik bertingkat, penilaian berbasis kinerja (*performance-based assessment*), asesmen portofolio digital, dan pemberian umpan balik deskriptif yang berorientasi pada kemajuan (*growth mindset feedback*).
+            </p>
+            <div class="mt-4 p-3 rounded-xl bg-sky-50/70 border border-sky-100 text-xs text-sky-900">
+              📚 <strong>Rujukan Teoretis:</strong> Taksonomi Bloom Revisi Anderson-Krathwohl (C4-C6) & Konsep Authentic Assessment Grant Wiggins (Understanding by Design).
+            </div>
+          </div>
+
+          <!-- Change Panel -->
+          <div class="framer-card p-6 c4-content-panel border-l-4 border-l-emerald-500" data-panel-c="change">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+                <h4 class="font-bold text-gray-950 font-display text-lg">Change (Perubahan Praktik)</h4>
+              </div>
+              <span class="text-xs font-mono text-gray-400 font-semibold">04 / 4C</span>
+            </div>
+            <p class="text-sm text-gray-700 leading-relaxed">
+              Membiasakan penilaian berbasis portofolio dan studi kasus kewarganegaraan riil di sekitar siswa. Ujian pilihan ganda konvensional dialihkan menjadi proyek pemecahan masalah intoleransi dan simulasi musyawarah kelas berbobot kognitif tinggi.
+            </p>
+            <div class="mt-4 p-3 rounded-xl bg-emerald-50/70 border border-emerald-100 text-xs text-emerald-900">
+              🌱 <strong>Hasil Riil di Kelas:</strong> Siswa mampu beragumentasi berbasis data konstitusi dan menunjukkan empati saat berbeda sudut pandang.
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Matrix Asesmen Presisi PMAL -->
+        <div class="framer-card p-6 sm:p-8 bg-white border border-gray-200">
+          <div class="flex items-center gap-3 mb-6">
+            <div class="w-10 h-10 rounded-xl bg-purple-100 flex items-center justify-center p-2">
+              <img src="images/asesmen-icon.png" alt="Asesmen Icon" class="w-full h-full object-contain">
+            </div>
+            <div>
+              <h4 class="font-bold text-gray-900 text-lg">Format Matriks Asesmen Presisi PPKn</h4>
+              <p class="text-xs text-gray-500">Kerangka kerja penilaian komprehensif yang dirancang selama perkuliahan PMAL</p>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
+            <div class="p-4 rounded-xl bg-gray-50 border border-gray-100">
+              <span class="font-bold font-mono text-purple-700 block mb-1">01. ASESMEN DIAGNOSTIK</span>
+              <p class="text-gray-600 mb-2">Memetakan kesiapan nalar dan profil belajar murid sebelum masuk bab Norma & Keadilan.</p>
+              <span class="inline-block px-2 py-0.5 rounded bg-white border border-gray-200 text-[10px] font-mono text-gray-700">Non-Kognitif & Kognitif</span>
+            </div>
+            <div class="p-4 rounded-xl bg-gray-50 border border-gray-100">
+              <span class="font-bold font-mono text-purple-700 block mb-1">02. ASESMEN FORMATIF</span>
+              <p class="text-gray-600 mb-2">Observasi diskusi kelompok, kartu refleksi harian, dan umpan balik deskriptif tanpa stempel angka mutlak.</p>
+              <span class="inline-block px-2 py-0.5 rounded bg-white border border-gray-200 text-[10px] font-mono text-gray-700">Assessment FOR Learning</span>
+            </div>
+            <div class="p-4 rounded-xl bg-gray-50 border border-gray-100">
+              <span class="font-bold font-mono text-purple-700 block mb-1">03. ASESMEN SUMATIF AUTENTIK</span>
+              <p class="text-gray-600 mb-2">Proyek kampanye anti-bullying dan pembuatan infografis hak dan kewajiban warga negara muda.</p>
+              <span class="inline-block px-2 py-0.5 rounded bg-white border border-gray-200 text-[10px] font-mono text-gray-700">Kinerja & Portofolio</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         SECTION 7: MATA KULIAH 03 — PPL MANDIRI (SMP NEGERI 8 PURWOKERTO)
+         ========================================================================== -->
+    <section id="mk-ppl" class="py-20 bg-white border-b border-gray-100" data-c4-section>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Header Section -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10 pb-6 border-b border-gray-100">
+          <div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="badge-num bg-sky-100 text-sky-700 font-mono">03</span>
+              <span class="tag-pill bg-sky-50 text-sky-700 border border-sky-200">Mata Kuliah 03</span>
+              <span class="tag-pill tag-pill-dark">Refleksi Praktik Lapangan</span>
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-950 tracking-tight">PPL Mandiri: Praktik Pengalaman Lapangan Terpadu</h2>
+            <p class="text-gray-600 mt-1 text-base">Sekolah Mitra: <strong>SMP Negeri 8 Purwokerto</strong> | Konsep Inti: Otonomi Pedagogik, Manajemen Kelas Kompleks, Keteladanan Mengajar Nyata.</p>
+          </div>
+
+          <!-- Document Artifact Trigger Buttons -->
+          <div class="flex flex-wrap items-center gap-2.5">
+            <button data-open-artifact="ppl" class="btn-capsule !bg-sky-600 hover:!bg-sky-700 !text-white text-sm shadow-sky-200">
+              <span>📄 Buka LK Lengkap PPL Mandiri</span>
+              <span class="arrow-icon">→</span>
+            </button>
+            <a href="https://drive.google.com/file/d/1l5dh41SAlUE4t7IiBl-Nhh-jXzJLquRQ/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="btn-capsule-outline text-xs" title="Buka langsung di Google Drive">
+              <span>Drive ↗</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- 4C Model Tabs Switcher -->
+        <div class="flex items-center gap-2 mb-8 overflow-x-auto pb-2">
+          <button class="c4-tab-btn active" data-target-c="all">Semua Refleksi 4C</button>
+          <button class="c4-tab-btn" data-target-c="connection">1. Connection</button>
+          <button class="c4-tab-btn" data-target-c="challenge">2. Challenge</button>
+          <button class="c4-tab-btn" data-target-c="concept">3. Concept</button>
+          <button class="c4-tab-btn" data-target-c="change">4. Change</button>
+        </div>
+
+        <!-- 4C Grid Panels -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+          
+          <!-- Connection Panel -->
+          <div class="framer-card p-6 c4-content-panel border-l-4 border-l-sky-500" data-panel-c="connection">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-sky-500"></span>
+                <h4 class="font-bold text-gray-950 font-display text-lg">Connection (Keterkaitan)</h4>
+              </div>
+              <span class="text-xs font-mono text-gray-400 font-semibold">01 / 4C</span>
+            </div>
+            <p class="text-sm text-gray-700 leading-relaxed">
+              Penerapan utuh teori pedagogi, modul ajar kurikulum merdeka, dan asesmen langsung di kelas nyata dengan tanggung jawab mandiri penuh sebagai pengampu mata pelajaran PPKn di SMP Negeri 8 Purwokerto. Teori di ruang kuliah PPG menemukan wujud hidupnya dalam interaksi riil setiap hari.
+            </p>
+            <div class="mt-4 p-3 rounded-xl bg-sky-50/70 border border-sky-100 text-xs text-sky-900">
+              💡 <strong>Insight Kunci:</strong> Menjadi guru profesional membutuhkan kehadiran utuh (*presence*): mendengarkan sebelum berbicara dan memahami sebelum menginstruksikan.
+            </div>
+          </div>
+
+          <!-- Challenge Panel -->
+          <div class="framer-card p-6 c4-content-panel border-l-4 border-l-amber-500" data-panel-c="challenge">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span>
+                <h4 class="font-bold text-gray-950 font-display text-lg">Challenge (Tantangan)</h4>
+              </div>
+              <span class="text-xs font-mono text-gray-400 font-semibold">02 / 4C</span>
+            </div>
+            <p class="text-sm text-gray-700 leading-relaxed">
+              Menghadapi spektrum keragaman karakter siswa yang sangat lebar, rentang atensi yang mudah terdistraksi gawai, serta fluktuasi motivasi belajar pasca jam istirahat. Di samping itu, penyesuaian alokasi waktu modul ajar saat sekolah menggelar agenda insidental menjadi tantangan kelenturan mengajar.
+            </p>
+            <div class="mt-4 p-3 rounded-xl bg-amber-50/70 border border-amber-100 text-xs text-amber-900">
+              ⚡ <strong>Solusi Lapangan:</strong> Menerapkan kesepakatan kelas partisipatif dan ice breaking berbasis nilai Pancasila untuk menyegarkan fokus murid.
+            </div>
+          </div>
+
+          <!-- Concept Panel -->
+          <div class="framer-card p-6 c4-content-panel border-l-4 border-l-purple-500" data-panel-c="concept">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-purple-500"></span>
+                <h4 class="font-bold text-gray-950 font-display text-lg">Concept (Konsep Kunci)</h4>
+              </div>
+              <span class="text-xs font-mono text-gray-400 font-semibold">03 / 4C</span>
+            </div>
+            <p class="text-sm text-gray-700 leading-relaxed">
+              Manajemen kelas berbasis pendekatan humanistik, diferensiasi konten/proses/produk sesuai kesiapan belajar murid, serta siklus refleksi harian melalui <em>Lesson Study</em> (Plan - Do - See) bersama Guru Pamong dan Dosen Pembimbing Lapangan.
+            </p>
+            <div class="mt-4 p-3 rounded-xl bg-purple-50/70 border border-purple-100 text-xs text-purple-900">
+              📚 <strong>Rujukan Teoretis:</strong> Siklus Refleksi Kolaboratif Lesson Study & Model Manajemen Kelas Humanis Haim Ginott.
+            </div>
+          </div>
+
+          <!-- Change Panel -->
+          <div class="framer-card p-6 c4-content-panel border-l-4 border-l-emerald-500" data-panel-c="change">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+                <h4 class="font-bold text-gray-950 font-display text-lg">Change (Perubahan Praktik)</h4>
+              </div>
+              <span class="text-xs font-mono text-gray-400 font-semibold">04 / 4C</span>
+            </div>
+            <p class="text-sm text-gray-700 leading-relaxed">
+              Semakin luwes dan tanggap memodifikasi strategi saat proses belajar berlangsung sesuai respons riil murid (*responsive teaching*). Tidak lagi terpaku kaku pada teks modul ajar, melainkan mengalir dinamis menyesuaikan dinamika kelas tanpa kehilangan arah capaian pembelajaran.
+            </p>
+            <div class="mt-4 p-3 rounded-xl bg-emerald-50/70 border border-emerald-100 text-xs text-emerald-900">
+              🌱 <strong>Hasil Riil di Kelas:</strong> Suasana kelas menjadi sangat interaktif, tingkat ketuntasan asesmen formatif mencapai 92%, dan hubungan emosional guru-murid terjalin sangat erat.
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Visual Highlight PPL di SMPN 8 Purwokerto -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="framer-card overflow-hidden group cursor-pointer" data-lightbox-src="images/ppl-mengajar.jpg" data-lightbox-caption="Siti Wafiq menjelaskan konsep norma sosial di hadapan siswa SMPN 8 Purwokerto" data-lightbox-tag="Praktik Mengajar">
+            <div class="h-48 overflow-hidden">
+              <img src="images/ppl-mengajar.jpg" alt="PPL Mengajar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            </div>
+            <div class="p-4 bg-white">
+              <span class="text-[10px] font-mono text-sky-600 font-bold uppercase">Dokumentasi 01</span>
+              <h5 class="font-bold text-sm text-gray-900 mt-1">Pembelajaran Konseptual di Kelas</h5>
+              <p class="text-xs text-gray-500 mt-1">Memfasilitasi diskusi dua arah materi norma dan konstitusi.</p>
+            </div>
+          </div>
+
+          <div class="framer-card overflow-hidden group cursor-pointer" data-lightbox-src="images/ppl-kelas.jpg" data-lightbox-caption="Interaksi akrab dan hangat dengan murid pasca sesi pembelajaran PPKn" data-lightbox-tag="Well-Being Murid">
+            <div class="h-48 overflow-hidden">
+              <img src="images/ppl-kelas.jpg" alt="Interaksi Siswa" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            </div>
+            <div class="p-4 bg-white">
+              <span class="text-[10px] font-mono text-sky-600 font-bold uppercase">Dokumentasi 02</span>
+              <h5 class="font-bold text-sm text-gray-900 mt-1">Ekosistem Kelas yang Menyenangkan</h5>
+              <p class="text-xs text-gray-500 mt-1">Menjalin kedekatan emosional untuk mengikis ketakutan belajar.</p>
+            </div>
+          </div>
+
+          <div class="framer-card overflow-hidden group cursor-pointer" data-lightbox-src="images/ppl-bersama-siswa.jpg" data-lightbox-caption="Foto kebersamaan bersama rekan guru pamong dan murid SMPN 8 Purwokerto" data-lightbox-tag="Kolaborasi Sekolah">
+            <div class="h-48 overflow-hidden">
+              <img src="images/ppl-bersama-siswa.jpg" alt="Kebersamaan SMPN 8" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            </div>
+            <div class="p-4 bg-white">
+              <span class="text-[10px] font-mono text-sky-600 font-bold uppercase">Dokumentasi 03</span>
+              <h5 class="font-bold text-sm text-gray-900 mt-1">Kebersamaan & Komunitas Sekolah</h5>
+              <p class="text-xs text-gray-500 mt-1">Kolaborasi harmonis bersama guru pamong dan murid mitra.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         SECTION 8: MATA KULIAH 04 — PROJEK KEPEMIMPINAN
+         ========================================================================== -->
+    <section id="mk-projek" class="py-20 bg-gray-50/60 border-b border-gray-200" data-c4-section>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Header Section -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10 pb-6 border-b border-gray-200">
+          <div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="badge-num bg-amber-100 text-amber-700 font-mono">04</span>
+              <span class="tag-pill bg-amber-50 text-amber-700 border border-amber-200">Mata Kuliah 04</span>
+              <span class="tag-pill tag-pill-dark">Refleksi Community Impact</span>
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-950 tracking-tight">Projek Kepemimpinan</h2>
+            <p class="text-gray-600 mt-1 text-base">Konsep Inti: Service Learning, Leadership, Manajemen Proyek, dan Kolaborasi Komunitas.</p>
+          </div>
+
+          <!-- Document Artifact Trigger Buttons -->
+          <div class="flex flex-wrap items-center gap-2.5">
+            <button data-open-artifact="projek" class="btn-capsule !bg-amber-600 hover:!bg-amber-700 !text-white text-sm shadow-amber-200">
+              <span>📄 Buka LK Lengkap Projek Kepemimpinan</span>
+              <span class="arrow-icon">→</span>
+            </button>
+            <a href="https://drive.google.com/file/d/1Mo84IJZDY4Fk3MYI9W70FR2CLdRN5oiT/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="btn-capsule-outline text-xs" title="Buka langsung di Google Drive">
+              <span>Drive ↗</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- 4C Model Tabs Switcher -->
+        <div class="flex items-center gap-2 mb-8 overflow-x-auto pb-2">
+          <button class="c4-tab-btn active" data-target-c="all">Semua Refleksi 4C</button>
+          <button class="c4-tab-btn" data-target-c="connection">1. Connection</button>
+          <button class="c4-tab-btn" data-target-c="challenge">2. Challenge</button>
+          <button class="c4-tab-btn" data-target-c="concept">3. Concept</button>
+          <button class="c4-tab-btn" data-target-c="change">4. Change</button>
+        </div>
+
+        <!-- 4C Grid Panels -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+          
+          <!-- Connection Panel -->
+          <div class="framer-card p-6 c4-content-panel border-l-4 border-l-amber-500" data-panel-c="connection">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span>
+                <h4 class="font-bold text-gray-950 font-display text-lg">Connection (Keterkaitan)</h4>
+              </div>
+              <span class="text-xs font-mono text-gray-400 font-semibold">01 / 4C</span>
+            </div>
+            <p class="text-sm text-gray-700 leading-relaxed">
+              Memosisikan guru tidak hanya sebagai pengajar teks di balik podium kelas, melainkan sebagai pemimpin perubahan (*change maker*) yang mampu memobilisasi potensi ekosistem sekolah dan masyarakat sekitar demi kemaslahatan bersama.
+            </p>
+            <div class="mt-4 p-3 rounded-xl bg-amber-50/70 border border-amber-100 text-xs text-amber-900">
+              💡 <strong>Insight Kunci:</strong> Kepemimpinan guru teruji saat ia mampu menghubungkan kebutuhan riil komunitas dengan pembelajaran bermakna peserta didik.
+            </div>
+          </div>
+
+          <!-- Challenge Panel -->
+          <div class="framer-card p-6 c4-content-panel border-l-4 border-l-pink-500" data-panel-c="challenge">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-pink-500"></span>
+                <h4 class="font-bold text-gray-950 font-display text-lg">Challenge (Tantangan)</h4>
+              </div>
+              <span class="text-xs font-mono text-gray-400 font-semibold">02 / 4C</span>
+            </div>
+            <p class="text-sm text-gray-700 leading-relaxed">
+              Menyelaraskan beragam perspektif dan ritme kerja anggota tim, mengatasi kendala logistik lapangan, serta membangun komunikasi persuasif dengan mitra masyarakat agar inisiatif dipandang sebagai kebutuhan bersama, bukan sekadar tugas kuliah.
+            </p>
+            <div class="mt-4 p-3 rounded-xl bg-pink-50/70 border border-pink-100 text-xs text-pink-900">
+              ⚡ <strong>Solusi Lapangan:</strong> Mengedepankan musyawarah mufakat ala Pancasila dan pembagian peran yang berbasis pada kekuatan utama (*strength-based*) tiap rekan.
+            </div>
+          </div>
+
+          <!-- Concept Panel -->
+          <div class="framer-card p-6 c4-content-panel border-l-4 border-l-sky-500" data-panel-c="concept">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-sky-500"></span>
+                <h4 class="font-bold text-gray-950 font-display text-lg">Concept (Konsep Kunci)</h4>
+              </div>
+              <span class="text-xs font-mono text-gray-400 font-semibold">03 / 4C</span>
+            </div>
+            <p class="text-sm text-gray-700 leading-relaxed">
+              Penerapan tahapan Inkuiri Apresiatif <strong>BAGJA</strong> (Buat pertanyaan, Ambil pelajaran, Gali mimpi, Jabarkan rencana, Atur eksekusi) serta pendekatan <strong>ABCD (Asset-Based Community Development)</strong> yang fokus memaksimalkan modal aset yang sudah ada.
+            </p>
+            <div class="mt-4 p-3 rounded-xl bg-sky-50/70 border border-sky-100 text-xs text-sky-900">
+              📚 <strong>Rujukan Teoretis:</strong> Inkuiri Apresiatif David Cooperrider & Asset-Based Community Development Kretzmann & McKnight.
+            </div>
+          </div>
+
+          <!-- Change Panel -->
+          <div class="framer-card p-6 c4-content-panel border-l-4 border-l-emerald-500" data-panel-c="change">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+                <h4 class="font-bold text-gray-950 font-display text-lg">Change (Perubahan Praktik)</h4>
+              </div>
+              <span class="text-xs font-mono text-gray-400 font-semibold">04 / 4C</span>
+            </div>
+            <p class="text-sm text-gray-700 leading-relaxed">
+              Menumbuhkan inisiatif kepemimpinan yang proaktif, berorientasi solusi (*solution-driven*), tangguh menghadapi ketidakpastian lapangan, dan mampu memberdayakan murid untuk memimpin proyek kemanusiaan di lingkungannya sendiri.
+            </p>
+            <div class="mt-4 p-3 rounded-xl bg-emerald-50/70 border border-emerald-100 text-xs text-emerald-900">
+              🌱 <strong>Hasil Riil di Lapangan:</strong> Kemitraan komunitas terbentuk secara berkelanjutan, menorehkan apresiasi dari pemangku kepentingan sekolah mitra.
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Interactive BAGJA Inquiry Explorer -->
+        <div class="framer-card p-6 sm:p-8 bg-white border border-gray-200">
+          <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="tag-pill bg-amber-100 text-amber-800">Inkuiri Apresiatif</span>
+                <span class="text-xs font-mono text-gray-500 font-semibold">Alur Manajemen Perubahan</span>
+              </div>
+              <h4 class="text-xl font-bold text-gray-950 mt-1">Siklus Kerangka Kerja BAGJA</h4>
+            </div>
+            <div class="text-xs font-mono text-gray-400">Pilih tahapan untuk menelusuri detail:</div>
+          </div>
+
+          <!-- BAGJA Pills Nav -->
+          <div class="flex flex-wrap gap-2 sm:gap-3 mb-6">
+            <button data-bagja-step="B" class="px-4 py-2 rounded-xl text-xs sm:text-sm font-bold font-mono transition-all bg-gray-900 text-white shadow-sm">
+              B • Buat Pertanyaan
+            </button>
+            <button data-bagja-step="A" class="px-4 py-2 rounded-xl text-xs sm:text-sm font-bold font-mono transition-all bg-white text-gray-700 border border-gray-200 hover:bg-gray-100">
+              A • Ambil Pelajaran
+            </button>
+            <button data-bagja-step="G" class="px-4 py-2 rounded-xl text-xs sm:text-sm font-bold font-mono transition-all bg-white text-gray-700 border border-gray-200 hover:bg-gray-100">
+              G • Gali Mimpi
+            </button>
+            <button data-bagja-step="J" class="px-4 py-2 rounded-xl text-xs sm:text-sm font-bold font-mono transition-all bg-white text-gray-700 border border-gray-200 hover:bg-gray-100">
+              J • Jabarkan Rencana
+            </button>
+            <button data-bagja-step="A2" class="px-4 py-2 rounded-xl text-xs sm:text-sm font-bold font-mono transition-all bg-white text-gray-700 border border-gray-200 hover:bg-gray-100">
+              A • Atur Eksekusi
+            </button>
+          </div>
+
+          <!-- Dynamic Display Box -->
+          <div class="p-5 rounded-2xl bg-amber-50/50 border border-amber-200/80">
+            <h5 id="bagja-title" class="font-bold text-gray-900 text-lg">Buat Pertanyaan Utama (Define)</h5>
+            <p id="bagja-desc" class="text-sm text-gray-700 mt-1">
+              Merumuskan pertanyaan pemantik untuk mengidentifikasi potensi kepemimpinan dan kebutuhan riil di lingkungan belajar & komunitas.
+            </p>
+            <div class="mt-3 p-3 rounded-xl bg-white border border-amber-200 text-xs text-amber-950 font-medium">
+              🎯 <strong>Pertanyaan Kunci Siti Wafiq:</strong> <span id="bagja-focus">Bagaimana menumbuhkan kesadaran ekologis dan gotong royong murid melalui inisiatif kepemimpinan mandiri?</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         SECTION 9: MATA KULIAH 05 — ISLAM DAN ILMU PENGETAHUAN
+         ========================================================================== -->
+    <section id="mk-islam" class="py-20 bg-white border-b border-gray-100" data-c4-section>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Header Section -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10 pb-6 border-b border-gray-100">
+          <div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="badge-num bg-emerald-100 text-emerald-700 font-mono">05</span>
+              <span class="tag-pill bg-emerald-50 text-emerald-700 border border-emerald-200">Mata Kuliah 05</span>
+              <span class="tag-pill tag-pill-dark">Refleksi Nilai & Spiritual</span>
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-950 tracking-tight">Islam dan Ilmu Pengetahuan</h2>
+            <p class="text-gray-600 mt-1 text-base">Konsep Inti: Integrasi Ilmu & Agama, Nilai Profetik, Akhlak Pendidik Muslim, dan Keindonesiaan.</p>
+          </div>
+
+          <!-- Document Artifact Trigger Buttons -->
+          <div class="flex flex-wrap items-center gap-2.5">
+            <button data-open-artifact="islam" class="btn-capsule !bg-emerald-700 hover:!bg-emerald-800 !text-white text-sm shadow-emerald-200">
+              <span>📄 Buka LK Lengkap Islam & IP</span>
+              <span class="arrow-icon">→</span>
+            </button>
+            <a href="https://drive.google.com/file/d/1EPB0AfbUaSGiBw9IKcHaU2haLZ9ciDpC/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="btn-capsule-outline text-xs" title="Buka langsung di Google Drive">
+              <span>Drive ↗</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- 4C Model Tabs Switcher -->
+        <div class="flex items-center gap-2 mb-8 overflow-x-auto pb-2">
+          <button class="c4-tab-btn active" data-target-c="all">Semua Refleksi 4C</button>
+          <button class="c4-tab-btn" data-target-c="connection">1. Connection</button>
+          <button class="c4-tab-btn" data-target-c="challenge">2. Challenge</button>
+          <button class="c4-tab-btn" data-target-c="concept">3. Concept</button>
+          <button class="c4-tab-btn" data-target-c="change">4. Change</button>
+        </div>
+
+        <!-- 4C Grid Panels -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+          
+          <!-- Connection Panel -->
+          <div class="framer-card p-6 c4-content-panel border-l-4 border-l-emerald-600" data-panel-c="connection">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-600"></span>
+                <h4 class="font-bold text-gray-950 font-display text-lg">Connection (Keterkaitan)</h4>
+              </div>
+              <span class="text-xs font-mono text-gray-400 font-semibold">01 / 4C</span>
+            </div>
+            <p class="text-sm text-gray-700 leading-relaxed">
+              Menyatukan fondasi spiritualitas Islam dengan pengamalan nilai-nilai luhur Pancasila dalam pembentukan watak peserta didik. Pembelajaran PPKn tidak boleh terputus dari nilai transendental: cinta tanah air (*hubbul wathan*) adalah manifestasi langsung dari kesempurnaan iman.
+            </p>
+            <div class="mt-4 p-3 rounded-xl bg-emerald-50/70 border border-emerald-100 text-xs text-emerald-900">
+              💡 <strong>Insight Kunci:</strong> Nilai-nilai Pancasila selaras seirama dengan maqashid syariah: menjaga agama, jiwa, akal, keturunan, dan martabat kebangsaan.
+            </div>
+          </div>
+
+          <!-- Challenge Panel -->
+          <div class="framer-card p-6 c4-content-panel border-l-4 border-l-amber-500" data-panel-c="challenge">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span>
+                <h4 class="font-bold text-gray-950 font-display text-lg">Challenge (Tantangan)</h4>
+              </div>
+              <span class="text-xs font-mono text-gray-400 font-semibold">02 / 4C</span>
+            </div>
+            <p class="text-sm text-gray-700 leading-relaxed">
+              Mengintegrasikan nilai keislaman dan sains ke dalam narasi kebangsaan secara inklusif di ruang kelas majemuk tanpa kehilangan esensi religiusitas. Menghindarkan peserta didik dari jebakan dikotomi sempit antara ilmu umum dan ilmu agama.
+            </p>
+            <div class="mt-4 p-3 rounded-xl bg-amber-50/70 border border-amber-100 text-xs text-amber-900">
+              ⚡ <strong>Solusi Lapangan:</strong> Menyajikan contoh universal bagaimana keadilan, kejujuran, dan toleransi dipandang mulia oleh seluruh ajaran agama di Indonesia.
+            </div>
+          </div>
+
+          <!-- Concept Panel -->
+          <div class="framer-card p-6 c4-content-panel border-l-4 border-l-purple-500" data-panel-c="concept">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-purple-500"></span>
+                <h4 class="font-bold text-gray-950 font-display text-lg">Concept (Konsep Kunci)</h4>
+              </div>
+              <span class="text-xs font-mono text-gray-400 font-semibold">03 / 4C</span>
+            </div>
+            <p class="text-sm text-gray-700 leading-relaxed">
+              Epistemologi tauhid, konsep pendidik sebagai <em>murabbi</em> (pembimbing jiwa), <em>mu'allim</em> (pengajar ilmu), dan <em>mudarris</em> (pelatih kecakapan), serta harmonisasi antara wahyu ilahi, akal nalar, dan sains modern.
+            </p>
+            <div class="mt-4 p-3 rounded-xl bg-purple-50/70 border border-purple-100 text-xs text-purple-900">
+              📚 <strong>Rujukan Teoretis:</strong> Integrasi Keilmuan Islam Al-Ghazali & Konsep Pendidikan Berkemajuan Muhammadiyah (Ahmad Dahlan).
+            </div>
+          </div>
+
+          <!-- Change Panel -->
+          <div class="framer-card p-6 c4-content-panel border-l-4 border-l-pink-500" data-panel-c="change">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-pink-500"></span>
+                <h4 class="font-bold text-gray-950 font-display text-lg">Change (Perubahan Praktik)</h4>
+              </div>
+              <span class="text-xs font-mono text-gray-400 font-semibold">04 / 4C</span>
+            </div>
+            <p class="text-sm text-gray-700 leading-relaxed">
+              Membangun iklim pembelajaran yang menanamkan kesadaran transendental: bahwa belajar dengan sungguh-sungguh, berbuat adil kepada sesama, dan merawat persatuan bangsa di ruang kelas PPKn adalah bagian integral dari ibadah kepada Tuhan Yang Maha Esa.
+            </p>
+            <div class="mt-4 p-3 rounded-xl bg-pink-50/70 border border-pink-100 text-xs text-pink-900">
+              🌱 <strong>Hasil Riil di Kelas:</strong> Siswa menunjukkan rasa hormat yang mendalam, sikap toleran yang tulus, dan kesadaran spiritual dalam setiap keputusan moralnya.
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Triad Integrasi Islam & Ilmu Pengetahuan -->
+        <div class="framer-card p-6 sm:p-8 bg-emerald-50/40 border border-emerald-200">
+          <div class="flex items-center gap-3 mb-6">
+            <div class="w-10 h-10 rounded-xl bg-emerald-600 text-white flex items-center justify-center font-bold text-lg font-mono">
+              ✦
+            </div>
+            <div>
+              <h4 class="font-bold text-gray-950 text-lg">Triad Integrasi Pendidik PPKn Muslim</h4>
+              <p class="text-xs text-gray-600">Harmonisasi tiga dimensi kepribadian guru profesional menurut Siti Wafiq Aliyatun N.R.</p>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
+            <div class="p-4 rounded-xl bg-white border border-emerald-100 shadow-sm">
+              <span class="font-mono font-bold text-emerald-800 text-sm block mb-1">1. MURABBI (Jiwa)</span>
+              <p class="text-gray-600">Mendidik dengan kehangatan kasih sayang, mendoakan murid secara tulus, dan menanamkan akhlak karimah.</p>
+            </div>
+            <div class="p-4 rounded-xl bg-white border border-emerald-100 shadow-sm">
+              <span class="font-mono font-bold text-emerald-800 text-sm block mb-1">2. MU'ALLIM (Akal)</span>
+              <p class="text-gray-600">Menguasai sains pedagogi modern, metodologi asesmen presisi, serta literasi konstitusi yang kokoh.</p>
+            </div>
+            <div class="p-4 rounded-xl bg-white border border-emerald-100 shadow-sm">
+              <span class="font-mono font-bold text-emerald-800 text-sm block mb-1">3. MUDARRIS (Aksi)</span>
+              <p class="text-gray-600">Melatih kecakapan hidup, inisiatif kepemimpinan sosial, dan keteladanan gotong royong di tengah masyarakat.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         SECTION 10: SINTESIS PERJALANAN BELAJAR SEMESTER II
+         ========================================================================== -->
+    <section id="sintesis" class="py-20 bg-dot-grid bg-[#F8F9FA] border-b border-gray-200 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Header Section -->
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="tag-pill tag-pill-dark mb-3">Sintesis & Puncak Metamorfosis</span>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-950 tracking-tight leading-tight">
+            Dari Pemahaman Teoretis Menuju Tindakan Profesional yang Berdampak
+          </h2>
+          <p class="text-gray-600 mt-3 text-base">
+            Sintesis integratif 5 mata kuliah Semester II membentuk 5 Pilar Kemandirian Guru PPKn Abad ke-21.
+          </p>
+        </div>
+
+        <!-- Matrix 5 Pilar Kemandirian Guru -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 mb-16">
+          
+          <!-- Pilar 1 -->
+          <div class="framer-card p-6 bg-white flex flex-col justify-between border-t-4 border-t-pink-500">
+            <div>
+              <span class="text-xs font-mono font-bold text-pink-600 uppercase">Pilar 01</span>
+              <h4 class="font-bold text-gray-950 text-lg mt-1">Kesadaran Emosi</h4>
+              <span class="inline-block text-[11px] font-mono text-gray-400 mb-3">(PSE)</span>
+              <p class="text-xs text-gray-600 leading-relaxed">
+                Terciptanya suasana kelas PPKn yang hangat, aman, dan memanusiakan murid melalui mindful teaching dan 5 KSE.
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-gray-100 text-[11px] font-semibold text-pink-700">
+              ✓ Kelas yang Menguatkan
+            </div>
+          </div>
+
+          <!-- Pilar 2 -->
+          <div class="framer-card p-6 bg-white flex flex-col justify-between border-t-4 border-t-purple-600">
+            <div>
+              <span class="text-xs font-mono font-bold text-purple-600 uppercase">Pilar 02</span>
+              <h4 class="font-bold text-gray-950 text-lg mt-1">Presisi Evaluasi</h4>
+              <span class="inline-block text-[11px] font-mono text-gray-400 mb-3">(PMAL)</span>
+              <p class="text-xs text-gray-600 leading-relaxed">
+                Mengukur perkembangan murid secara komprehensif, adil, autentik, dan menstimulasi pemikiran kritis tingkat tinggi (HOTS).
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-gray-100 text-[11px] font-semibold text-purple-700">
+              ✓ Asesmen Bermakna
+            </div>
+          </div>
+
+          <!-- Pilar 3 -->
+          <div class="framer-card p-6 bg-white flex flex-col justify-between border-t-4 border-t-sky-500">
+            <div>
+              <span class="text-xs font-mono font-bold text-sky-600 uppercase">Pilar 03</span>
+              <h4 class="font-bold text-gray-950 text-lg mt-1">Otonomi Praktik</h4>
+              <span class="inline-block text-[11px] font-mono text-gray-400 mb-3">(PPL Mandiri)</span>
+              <p class="text-xs text-gray-600 leading-relaxed">
+                Percaya diri, tangkas, dan adaptif dalam mengelola dinamika kelas secara nyata di sekolah mitra SMPN 8 Purwokerto.
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-gray-100 text-[11px] font-semibold text-sky-700">
+              ✓ Ketangguhan Lapangan
+            </div>
+          </div>
+
+          <!-- Pilar 4 -->
+          <div class="framer-card p-6 bg-white flex flex-col justify-between border-t-4 border-t-amber-500">
+            <div>
+              <span class="text-xs font-mono font-bold text-amber-600 uppercase">Pilar 04</span>
+              <h4 class="font-bold text-gray-950 text-lg mt-1">Jiwa Pemimpin</h4>
+              <span class="inline-block text-[11px] font-mono text-gray-400 mb-3">(Projek Kepemimpinan)</span>
+              <p class="text-xs text-gray-600 leading-relaxed">
+                Menggerakkan komunitas sekolah melalui Inkuiri Apresiatif BAGJA, mengoptimalkan aset, dan berkolaborasi luas.
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-gray-100 text-[11px] font-semibold text-amber-700">
+              ✓ Change Maker Nyata
+            </div>
+          </div>
+
+          <!-- Pilar 5 -->
+          <div class="framer-card p-6 bg-white flex flex-col justify-between border-t-4 border-t-emerald-600">
+            <div>
+              <span class="text-xs font-mono font-bold text-emerald-600 uppercase">Pilar 05</span>
+              <h4 class="font-bold text-gray-950 text-lg mt-1">Fondasi Nilai</h4>
+              <span class="inline-block text-[11px] font-mono text-gray-400 mb-3">(Islam & IP)</span>
+              <p class="text-xs text-gray-600 leading-relaxed">
+                Mengajar dengan hati yang ikhlas, berprinsip akhlak mulia profetik, dan mengintegrasikan iman dalam persatuan bangsa.
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-gray-100 text-[11px] font-semibold text-emerald-700">
+              ✓ Integritas Profetik
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Key Quote Box (Editorial Masterpiece) -->
+        <div class="max-w-4xl mx-auto p-8 sm:p-12 rounded-3xl bg-gray-950 text-white relative shadow-2xl overflow-hidden">
+          <div class="absolute -right-10 -bottom-10 w-64 h-64 bg-pink-500/20 rounded-full blur-3xl pointer-events-none"></div>
+          
+          <div class="relative z-10 space-y-6">
+            <span class="inline-block text-pink-400 font-mono text-xs font-bold tracking-widest uppercase">
+              ✦ REFLEKSI FILOSOFIS PUNCAK METAMORFOSIS
+            </span>
+            
+            <p class="font-editorial italic text-xl sm:text-2xl lg:text-3xl leading-relaxed text-gray-100 font-light">
+              “Semester II mengajarkan saya bahwa menjadi pendidik bukan sekadar profesi kerja, melainkan komitmen peradaban: <span class="text-pink-300 font-normal">merawat akal murid dengan ilmu pengetahuan, membimbing hatinya dengan empati,</span> dan memperkuat jiwanya dengan nilai-nilai luhur kebangsaan.”
+            </p>
+
+            <div class="pt-4 border-t border-gray-800 flex items-center justify-between flex-wrap gap-4">
+              <div>
+                <span class="block font-bold text-white text-base">Siti Wafiq Aliyatun Nurur Rohmana, S.Pd.</span>
+                <span class="text-xs text-gray-400 font-mono">Mahasiswa PPG Calon Guru Gelombang 1 Tahun 2026 — Universitas Muhammadiyah Purwokerto</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="text-xs px-3 py-1 rounded-full bg-white/10 text-pink-300 border border-white/10 font-mono">PPKn UMP</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         SECTION 11: GALERI AKSI NYATA & DOKUMENTASI LAPANGAN
+         ========================================================================== -->
+    <section id="galeri" class="py-20 bg-white border-b border-gray-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Header Section -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-12">
+          <div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="tag-pill tag-pill-pink">Field Documentation</span>
+              <span class="text-xs font-mono text-gray-500 uppercase">SMP Negeri 8 Purwokerto & UMP</span>
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-950 tracking-tight">Galeri Aksi Nyata & Dokumentasi Lapangan</h2>
+            <p class="text-gray-600 mt-1 text-base">Rekaman visual otentik dinamika pembelajaran, interaksi murid, dan komitmen profesi.</p>
+          </div>
+          <div class="text-xs font-mono text-gray-400">
+            Klik foto untuk memperbesar (Interactive Lightbox)
+          </div>
+        </div>
+
+        <!-- Masonry / Responsive Grid Photo Gallery -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <!-- Photo 1: PPL Mengajar -->
+          <div class="framer-card overflow-hidden group cursor-pointer" data-lightbox-src="images/ppl-mengajar.jpg" data-lightbox-caption="Praktik Mengajar Mandiri PPKn di Kelas SMP Negeri 8 Purwokerto" data-lightbox-tag="PPL Mandiri">
+            <div class="relative h-64 overflow-hidden">
+              <img src="images/ppl-mengajar.jpg" alt="PPL Mengajar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-gray-950/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                <span class="text-white text-xs font-semibold">🔍 Klik untuk Zoom</span>
+              </div>
+            </div>
+            <div class="p-4 bg-white">
+              <span class="text-[10px] font-mono text-pink-600 font-bold uppercase">Praktik Kelas</span>
+              <h5 class="font-bold text-sm text-gray-900 mt-0.5">Penjelasan Materi Norma & Hukum</h5>
+              <p class="text-xs text-gray-500 mt-1">SMP Negeri 8 Purwokerto</p>
+            </div>
+          </div>
+
+          <!-- Photo 2: Interaksi Siswa -->
+          <div class="framer-card overflow-hidden group cursor-pointer" data-lightbox-src="images/ppl-kelas.jpg" data-lightbox-caption="Interaksi Hangat dan Reflektif Bersama Peserta Didik Pasca Jam Pelajaran" data-lightbox-tag="Mindful Teaching">
+            <div class="relative h-64 overflow-hidden">
+              <img src="images/ppl-kelas.jpg" alt="Interaksi Siswa" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-gray-950/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                <span class="text-white text-xs font-semibold">🔍 Klik untuk Zoom</span>
+              </div>
+            </div>
+            <div class="p-4 bg-white">
+              <span class="text-[10px] font-mono text-sky-600 font-bold uppercase">Interaksi Positif</span>
+              <h5 class="font-bold text-sm text-gray-900 mt-0.5">Kedekatan Emosional Murid</h5>
+              <p class="text-xs text-gray-500 mt-1">Membangun Iklim Belajar Aman</p>
+            </div>
+          </div>
+
+          <!-- Photo 3: Foto Bersama Siswa & Guru -->
+          <div class="framer-card overflow-hidden group cursor-pointer" data-lightbox-src="images/ppl-bersama-siswa.jpg" data-lightbox-caption="Foto Bersama Peserta Didik dan Guru Pamong di Kelas SMP Negeri 8 Purwokerto" data-lightbox-tag="Kolaborasi Sekolah">
+            <div class="relative h-64 overflow-hidden">
+              <img src="images/ppl-bersama-siswa.jpg" alt="Foto Bersama" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-gray-950/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                <span class="text-white text-xs font-semibold">🔍 Klik untuk Zoom</span>
+              </div>
+            </div>
+            <div class="p-4 bg-white">
+              <span class="text-[10px] font-mono text-purple-600 font-bold uppercase">Refleksi Tim</span>
+              <h5 class="font-bold text-sm text-gray-900 mt-0.5">Kolaborasi Bersama Murid</h5>
+              <p class="text-xs text-gray-500 mt-1">Kebersamaan yang Membekas</p>
+            </div>
+          </div>
+
+          <!-- Photo 4: Wisuda & Komitmen Profesi -->
+          <div class="framer-card overflow-hidden group cursor-pointer" data-lightbox-src="images/wisuda-keluarga.png" data-lightbox-caption="Pencapaian Cum Laude dan Restu Keluarga Tercinta Menuju Guru Profesional" data-lightbox-tag="Komitmen Profesi">
+            <div class="relative h-64 overflow-hidden bg-gray-50 flex items-center justify-center">
+              <img src="images/wisuda-keluarga.png" alt="Wisuda Cum Laude" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-gray-950/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                <span class="text-white text-xs font-semibold">🔍 Klik untuk Zoom</span>
+              </div>
+            </div>
+            <div class="p-4 bg-white">
+              <span class="text-[10px] font-mono text-emerald-600 font-bold uppercase">Amanah Orang Tua</span>
+              <h5 class="font-bold text-sm text-gray-900 mt-0.5">Wisuda Cum Laude & Dedikasi</h5>
+              <p class="text-xs text-gray-500 mt-1">Pondasi Kasih & Restu Moral</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         SECTION 12: KONTAK & JEJARING PROFESIONAL (WHERE TO FIND ME)
+         ========================================================================== -->
+    <section id="kontak" class="py-20 bg-[#F8F9FA] border-b border-gray-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+          
+          <!-- Sisi Kiri: Minimalist Contact Hub (Where to Find Me) -->
+          <div class="lg:col-span-5 space-y-6">
+            <div>
+              <span class="tag-pill tag-pill-dark mb-2">Connect & Collaborate</span>
+              <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-950 tracking-tight">Where to Find Me</h2>
+              <p class="text-gray-600 mt-2 text-sm">
+                Terbuka untuk diskusi pengembangan kurikulum PPKn, inovasi modul ajar berdiferensiasi, riset tindakan kelas, serta kolaborasi kepemimpinan pendidikan.
+              </p>
+            </div>
+
+            <!-- List Baris Minimalis dengan Panah → -->
+            <div class="space-y-3 pt-2">
+              
+              <!-- LinkedIn -->
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="framer-card p-4 flex items-center justify-between group hover:border-pink-300">
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-xl bg-gray-100 flex items-center justify-center font-mono font-bold text-xs text-gray-900 group-hover:bg-pink-100 group-hover:text-pink-700 transition-colors">
+                    in
+                  </div>
+                  <div>
+                    <span class="block text-sm font-bold text-gray-950">LinkedIn</span>
+                    <span class="text-xs text-gray-500">Siti Wafiq Aliyatun N.R.</span>
+                  </div>
+                </div>
+                <span class="text-gray-400 group-hover:text-pink-600 group-hover:translate-x-1 transition-all">→</span>
+              </a>
+
+              <!-- Instagram -->
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="framer-card p-4 flex items-center justify-between group hover:border-pink-300">
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-xl bg-gray-100 flex items-center justify-center font-mono font-bold text-xs text-gray-900 group-hover:bg-pink-100 group-hover:text-pink-700 transition-colors">
+                    ig
+                  </div>
+                  <div>
+                    <span class="block text-sm font-bold text-gray-950">Instagram</span>
+                    <span class="text-xs text-gray-500">@sitiwafiq_</span>
+                  </div>
+                </div>
+                <span class="text-gray-400 group-hover:text-pink-600 group-hover:translate-x-1 transition-all">→</span>
+              </a>
+
+              <!-- YouTube -->
+              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="framer-card p-4 flex items-center justify-between group hover:border-pink-300">
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-xl bg-gray-100 flex items-center justify-center font-mono font-bold text-xs text-gray-900 group-hover:bg-pink-100 group-hover:text-pink-700 transition-colors">
+                    yt
+                  </div>
+                  <div>
+                    <span class="block text-sm font-bold text-gray-950">YouTube Edukasi</span>
+                    <span class="text-xs text-gray-500">Media Pembelajaran PPKn</span>
+                  </div>
+                </div>
+                <span class="text-gray-400 group-hover:text-pink-600 group-hover:translate-x-1 transition-all">→</span>
+              </a>
+
+              <!-- Email -->
+              <a href="mailto:sitiwafiq@ump.ac.id" class="framer-card p-4 flex items-center justify-between group hover:border-pink-300">
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-xl bg-gray-100 flex items-center justify-center font-mono font-bold text-xs text-gray-900 group-hover:bg-pink-100 group-hover:text-pink-700 transition-colors">
+                    @
+                  </div>
+                  <div>
+                    <span class="block text-sm font-bold text-gray-950">Email Resmi</span>
+                    <span class="text-xs text-gray-500">sitiwafiq@ump.ac.id</span>
+                  </div>
+                </div>
+                <span class="text-gray-400 group-hover:text-pink-600 group-hover:translate-x-1 transition-all">→</span>
+              </a>
+
+            </div>
+
+          </div>
+
+          <!-- Sisi Kanan: Mini Interactive Collaboration Card / Form -->
+          <div class="lg:col-span-7">
+            <div class="framer-card p-8 bg-white border border-gray-200 shadow-sm relative">
+              <div class="mb-6">
+                <div class="inline-flex items-center gap-2 mb-2">
+                  <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-ping"></span>
+                  <span class="text-xs font-mono font-bold text-emerald-700 uppercase">Available for Discussion</span>
+                </div>
+                <h3 class="text-2xl font-bold text-gray-950">Inisiasi Diskusi & Kolaborasi</h3>
+                <p class="text-sm text-gray-600 mt-1">
+                  “Terbuka untuk diskusi pengembangan kurikulum, inovasi modul PPKn, dan kolaborasi kepemimpinan pendidikan.”
+                </p>
+              </div>
+
+              <form id="collab-contact-form" class="space-y-4">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label for="contact-name" class="block text-xs font-mono font-semibold text-gray-700 mb-1">Nama Lengkap</label>
+                    <input type="text" id="contact-name" required placeholder="Nama Anda" class="w-full px-4 py-2.5 rounded-xl border border-gray-200 text-sm focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-transparent">
+                  </div>
+                  <div>
+                    <label for="contact-email" class="block text-xs font-mono font-semibold text-gray-700 mb-1">Email / Kontak</label>
+                    <input type="email" id="contact-email" required placeholder="alamat@email.com" class="w-full px-4 py-2.5 rounded-xl border border-gray-200 text-sm focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-transparent">
+                  </div>
+                </div>
+
+                <div>
+                  <label for="contact-topic" class="block text-xs font-mono font-semibold text-gray-700 mb-1">Topik Kolaborasi</label>
+                  <select id="contact-topic" class="w-full px-4 py-2.5 rounded-xl border border-gray-200 text-sm focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-transparent bg-white">
+                    <option value="seminar">Tanya Jawab Seminar PPG</option>
+                    <option value="modul">Pengembangan Modul Ajar PPKn & Asesmen</option>
+                    <option value="pse">Penerapan PSE & Mindfulness di Sekolah</option>
+                    <option value="projek">Kolaborasi Projek Kepemimpinan Komunitas</option>
+                    <option value="lainnya">Topik Lainnya</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label for="contact-msg" class="block text-xs font-mono font-semibold text-gray-700 mb-1">Pesan / Tanggapan</label>
+                  <textarea id="contact-msg" rows="3" required placeholder="Tuliskan catatan apresiasi atau ajakan diskusi..." class="w-full px-4 py-2.5 rounded-xl border border-gray-200 text-sm focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-transparent"></textarea>
+                </div>
+
+                <div class="pt-2 flex items-center justify-between">
+                  <button type="submit" class="btn-capsule text-sm">
+                    <span>Kirim Pesan Kolaborasi</span>
+                    <span class="arrow-icon">→</span>
+                  </button>
+                  <span class="text-[11px] font-mono text-gray-400">Respon dalam 1x24 jam</span>
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         SECTION 13: CLOSING / KOMITMEN GURU PROFESIONAL
+         ========================================================================== -->
+    <footer class="py-24 bg-white relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+        
+        <!-- Big Bold Title -->
+        <h2 class="text-5xl sm:text-7xl lg:text-8xl font-black text-gray-950 tracking-tighter mb-6">
+          TERIMA KASIH
+        </h2>
+
+        <!-- Subtext Inspiring -->
+        <p class="font-editorial italic text-xl sm:text-2xl text-gray-700 max-w-2xl mx-auto leading-relaxed mb-8">
+          “Perjalanan ini adalah awal dari pengabdian seumur hidup untuk mencerdaskan kehidupan bangsa.”
+        </p>
+
+        <!-- Credentials Badge Box -->
+        <div class="inline-block p-6 sm:p-8 rounded-3xl bg-gray-50 border border-gray-200 max-w-xl mx-auto shadow-sm">
+          <div class="w-16 h-16 rounded-full overflow-hidden mx-auto mb-4 border-2 border-white shadow-md">
+            <img src="images/profil-siti-wafiq.png" alt="Siti Wafiq" class="w-full h-full object-cover">
+          </div>
+          <h3 class="text-lg sm:text-xl font-bold text-gray-950 font-display">Siti Wafiq Aliyatun Nurur Rohmana, S.Pd.</h3>
+          <p class="text-xs sm:text-sm text-gray-600 font-medium mt-1">
+            Pendidikan Profesi Guru (PPG) Calon Guru Gelombang 1 Tahun 2026<br>
+            Program Studi Pendidikan Pancasila dan Kewarganegaraan (PPKn)<br>
+            <strong class="text-gray-900">Universitas Muhammadiyah Purwokerto</strong>
+          </p>
+
+          <div class="mt-6 pt-4 border-t border-gray-200 flex flex-wrap items-center justify-center gap-3 text-xs font-mono text-gray-500">
+            <a href="#hero" class="hover:text-gray-900 transition-colors">↑ Kembali ke Atas</a>
+            <span>•</span>
+            <button onclick="window.print()" class="hover:text-gray-900 transition-colors">🖨 Cetak Portofolio (PDF)</button>
+            <span>•</span>
+            <a href="#menu-navigasi" class="hover:text-gray-900 transition-colors">Refleksi 01-05</a>
+          </div>
+        </div>
+
+        <!-- Copyright & Micro Badges -->
+        <div class="mt-16 text-xs text-gray-400 font-mono space-y-1">
+          <p>© 2026 Siti Wafiq Aliyatun N.R., S.Pd. All rights reserved.</p>
+          <p>E-Portofolio Interaktif Seminar PPG Calon Guru Gelombang 1 Tahun 2026 • Universitas Muhammadiyah Purwokerto</p>
+        </div>
+
+      </div>
+    </footer>
+
+  </main>
+
+
+  <!-- ==========================================================================
+       MODAL: GOOGLE DRIVE ARTIFACT READER
+       ========================================================================== -->
+  <div id="artifact-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-doc-title">
+    <div class="modal-content">
+      
+      <!-- Modal Header -->
+      <div class="px-6 py-4 bg-gray-50 border-b border-gray-200 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <span id="modal-doc-badge" class="tag-pill tag-pill-pink text-[10px]">Lembar Kerja & Refleksi</span>
+          <h3 id="modal-doc-title" class="font-bold text-gray-900 text-sm sm:text-base font-display">Judul Dokumen Artefak</h3>
+        </div>
+        <button id="modal-close-btn" class="w-8 h-8 rounded-full bg-white border border-gray-200 hover:bg-gray-100 flex items-center justify-center text-gray-500 hover:text-gray-900 transition-colors" aria-label="Tutup">
+          ✕
+        </button>
+      </div>
+
+      <!-- Modal Body (Preview Iframe & Summary) -->
+      <div class="p-6 overflow-y-auto space-y-4 flex-1">
+        
+        <!-- Summary Box -->
+        <div class="p-4 rounded-xl bg-pink-50/60 border border-pink-100 text-xs text-gray-700 leading-relaxed">
+          <strong class="text-pink-900 font-semibold block mb-1">Ringkasan Dokumen Artefak Pembelajaran:</strong>
+          <span id="modal-doc-summary">Deskripsi ringkasan artefak akan ditampilkan di sini.</span>
+        </div>
+
+        <!-- Google Drive Preview Iframe Container -->
+        <div class="relative w-full h-[450px] sm:h-[500px] rounded-xl overflow-hidden border border-gray-200 bg-gray-100">
+          <iframe id="modal-doc-iframe" src="" class="w-full h-full border-0" allow="autoplay" title="Google Drive Document Preview"></iframe>
+        </div>
+
+      </div>
+
+      <!-- Modal Footer Action Buttons -->
+      <div class="px-6 py-4 bg-gray-50 border-t border-gray-200 flex flex-wrap items-center justify-between gap-3">
+        <button id="modal-copy-link" class="btn-capsule-outline text-xs">
+          <span>📋 Salin Tautan Drive</span>
+        </button>
+        <div class="flex items-center gap-2">
+          <a id="modal-direct-link" href="#" target="_blank" rel="noopener noreferrer" class="btn-capsule text-xs">
+            <span>Buka di Google Drive Tab Baru</span>
+            <span class="arrow-icon">↗</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- ==========================================================================
+       MODAL: GALLERY LIGHTBOX
+       ========================================================================== -->
+  <div id="gallery-lightbox" class="lightbox-overlay" role="dialog" aria-modal="true">
+    <div class="relative max-w-4xl max-h-[85vh] flex flex-col items-center">
+      
+      <!-- Close Button -->
+      <button id="lightbox-close" class="absolute -top-12 right-0 text-white hover:text-pink-400 font-mono text-sm px-3 py-1.5 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 transition-colors">
+        Tutup (Esc) ✕
+      </button>
+
+      <!-- Lightbox Image -->
+      <img id="lightbox-img" src="" alt="Zoom Foto" class="max-w-full max-h-[70vh] object-contain rounded-xl shadow-2xl border border-white/20">
+
+      <!-- Caption & Tags -->
+      <div class="mt-4 text-center">
+        <span id="lightbox-tag" class="tag-pill tag-pill-pink text-[10px] mb-2">PPL Mandiri</span>
+        <p id="lightbox-caption" class="text-white font-display text-sm font-semibold max-w-lg">Keterangan foto</p>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- ==========================================================================
+       COMMAND PALETTE (CTRL+K)
+       ========================================================================== -->
+  <div id="command-palette" class="command-palette">
+    <div class="palette-box">
+      <div class="p-4 border-b border-gray-200 flex items-center gap-3">
+        <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+        <input type="text" id="palette-input" placeholder="Ketik kata kunci (contoh: PSE, PMAL, PPL, BAGJA, Sintesis)..." class="w-full text-sm font-medium focus:outline-none">
+        <span class="text-[10px] font-mono bg-gray-100 text-gray-500 px-1.5 py-0.5 rounded border">ESC</span>
+      </div>
+      <div id="palette-items" class="p-2 max-h-72 overflow-y-auto space-y-1">
+        <a href="#mk-pse" class="palette-item flex items-center justify-between p-2.5 rounded-lg hover:bg-pink-50 text-xs font-medium text-gray-800 transition-colors">
+          <div class="flex items-center gap-2">
+            <span class="font-mono text-pink-600 bg-pink-100 px-1.5 py-0.5 rounded">01</span>
+            <span>Pembelajaran Sosial dan Emosional (PSE) — CASEL & STOP</span>
+          </div>
+          <span class="text-gray-400">→</span>
+        </a>
+        <a href="#mk-pmal" class="palette-item flex items-center justify-between p-2.5 rounded-lg hover:bg-purple-50 text-xs font-medium text-gray-800 transition-colors">
+          <div class="flex items-center gap-2">
+            <span class="font-mono text-purple-600 bg-purple-100 px-1.5 py-0.5 rounded">02</span>
+            <span>Pembelajaran Mendalam & Asesmen Lanjutan (PMAL) — HOTS</span>
+          </div>
+          <span class="text-gray-400">→</span>
+        </a>
+        <a href="#mk-ppl" class="palette-item flex items-center justify-between p-2.5 rounded-lg hover:bg-sky-50 text-xs font-medium text-gray-800 transition-colors">
+          <div class="flex items-center gap-2">
+            <span class="font-mono text-sky-600 bg-sky-100 px-1.5 py-0.5 rounded">03</span>
+            <span>PPL Mandiri — SMP Negeri 8 Purwokerto</span>
+          </div>
+          <span class="text-gray-400">→</span>
+        </a>
+        <a href="#mk-projek" class="palette-item flex items-center justify-between p-2.5 rounded-lg hover:bg-amber-50 text-xs font-medium text-gray-800 transition-colors">
+          <div class="flex items-center gap-2">
+            <span class="font-mono text-amber-600 bg-amber-100 px-1.5 py-0.5 rounded">04</span>
+            <span>Projek Kepemimpinan — BAGJA & ABCD Community</span>
+          </div>
+          <span class="text-gray-400">→</span>
+        </a>
+        <a href="#mk-islam" class="palette-item flex items-center justify-between p-2.5 rounded-lg hover:bg-emerald-50 text-xs font-medium text-gray-800 transition-colors">
+          <div class="flex items-center gap-2">
+            <span class="font-mono text-emerald-600 bg-emerald-100 px-1.5 py-0.5 rounded">05</span>
+            <span>Islam dan Ilmu Pengetahuan — Nilai Profetik & Kebangsaan</span>
+          </div>
+          <span class="text-gray-400">→</span>
+        </a>
+        <a href="#sintesis" class="palette-item flex items-center justify-between p-2.5 rounded-lg hover:bg-gray-100 text-xs font-medium text-gray-800 transition-colors">
+          <div class="flex items-center gap-2">
+            <span class="font-mono text-gray-600 bg-gray-200 px-1.5 py-0.5 rounded">★</span>
+            <span>Sintesis Perjalanan Belajar — 5 Pilar Kemandirian Guru</span>
+          </div>
+          <span class="text-gray-400">→</span>
+        </a>
+        <a href="#galeri" class="palette-item flex items-center justify-between p-2.5 rounded-lg hover:bg-gray-100 text-xs font-medium text-gray-800 transition-colors">
+          <div class="flex items-center gap-2">
+            <span class="font-mono text-gray-600 bg-gray-200 px-1.5 py-0.5 rounded">📸</span>
+            <span>Galeri Aksi Nyata & Dokumentasi Lapangan PPL</span>
+          </div>
+          <span class="text-gray-400">→</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Floating Back to Top Pill -->
+  <button id="back-to-top" class="fixed bottom-6 right-6 z-40 btn-capsule !py-2.5 !px-4 !text-xs opacity-0 pointer-events-none translate-y-4 transition-all duration-300 shadow-xl" aria-label="Kembali ke atas">
+    <span class="font-mono font-bold" id="progress-percent">0%</span>
+    <span>↑ Atas</span>
+  </button>
+
+  <!-- Application Interaction Scripts -->
+  <script src="app.js"></script>
+</body>
+</html>
